@@ -1,0 +1,236 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Componentes</title>
+</head>
+<body>
+
+<header class="cabecalho">
+  <div class="logoPrincipal">
+    <a href="componentes.html"><img class="logo" src="assets/images/logo.png" alt="Imagem Logo"></a>
+  </div>
+
+  <nav class="navegacao">
+    <ul>
+      <li><a href="index.html" class="links">Início</a></li>
+
+      <li><a href="montagem.html" class="links">Montagem</a></li>
+
+      <li><a href="componentes.html" class="links">Componentes</a></li>
+
+      <li><a href="sobre.html" class="links">Sobre</a></li>
+
+    </ul>
+  </nav>
+
+
+  <button type="button" class="montagem BotaoDesktop">Montar meu PC <img class="icons"
+                                                                         src="assets/icons/icon-Avancar.svg"
+                                                                         alt="Ícone Avançar">
+  </button>
+
+  <button type="button" class="botaoMenu" aria-label="Abrir menu" aria-expanded="false">
+    ☰
+  </button>
+</header>
+
+<section class="secaoComponente">
+  <div class="cardPrincipal">
+    <p class="informacao">BIBLIOTECA DE HARDWARE</p>
+    <h1 class="tituloHero"> Entenda cada peça antes de escolher.</h1>
+    <p class="descricao">Guias diretos, especificações traduzidas e dicas práticas para comparar hardware sem se perder
+      nos termos técnicos.</p>
+
+    <form action="/pesquisa" method="GET">
+      <label for="campo-busca"><img class="icons" src="assets/icons/icon-Pesquisar.svg" alt="Ícone de Pesquisar"></label>
+      <input type="search" id="campo-busca" name="q" placeholder="Busque por uma peça, termo ou dúvida...">
+      <button class="botaoPesquisar"><img class="icons" src="assets/icons/icone-Avancar2.svg" alt="Ícone Avançar"></button>
+    </form>
+
+  </div>
+
+  <div class="cardSecundario">
+    <img class="background-image" src="assets/images/imagemIlustracao2.png" alt="Imagem de ilustração">
+  </div>
+
+
+</section>
+
+<section class="secaoCategoria">
+
+  <div class="botoesCategoria">
+
+    <button class="botaoT: recomendado">Todos</button>
+
+    <button class="botaoE: recomendado">Essenciais</button>
+
+    <button class="botaoD: recomendado">Desempenho</button>
+
+    <button class="botaoR: recomendado">Energia e refrigeração</button>
+
+    <button class="botaoEstru: recomendado">Estrutura</button>
+  </div>
+  <div class="categoria">
+
+    <div class="divEsquerda">
+      <h2>Filtra guias</h2>
+
+      <p class="descricao">NÍVEL DE EXPERIÊCIA</p>
+      <label>
+        <input type="checkbox" name="contato" value="inicial" checked>
+        Primeiro contato
+      </label>
+
+      <label>
+        <input type="checkbox" name="contato" value="basico">
+        Já conheco o básico
+      </label>
+
+      <label>
+        <input type="checkbox" name="contato" value="aprofundar">
+        Quero aprofundar
+      </label>
+
+      <p class="descricao">MEU INTERESSE</p>
+
+      <label>
+        <input type="checkbox" name="interesse" value="fps">
+        Mais FPS
+      </label>
+
+      <label>
+        <input type="checkbox" name="interesse" value="economizar">
+        Economizar
+      </label>
+
+      <label>
+        <input type="checkbox" name="interesse" value="upgrades">
+        Futuros upgrades
+      </label>
+
+      <div class="cardMontar">
+
+        <h2>Não sabe por onde começar?</h2>
+        <p class="descricao">Faça a jornada guiada e receba sugestões para o seu uso.</p>
+        <a class="links: montagem3" href="montagem.html">Começar montagem <img class="icons" src="assets/icons/icon-Avancar.svg" alt="Ícone Avançar"></a>
+      </div>
+    </div>
+
+    <div class="divDireita">
+      <div class="controlaCards">
+
+        <div class="cardProcessador: card">
+          <img class="icons" src="assets/icons/icon-CPU.svg" alt="Ícone Processador">
+          <h2 class="tituloCom">Processador</h2>
+          <p class="tituloLinha">O cérebro do PC. Coordena jogos, programas e tarefas.</p>
+
+          <p class="descricao">Observe: núcleos, clock e soquete</p>
+          <p class="informacaoComp">Comece por aqui</p>
+        </div>
+
+        <div class="cardPlacaVideo: card">
+          <img class="icons" src="assets/icons/icon-PlacaVideo.svg" alt="Ícone Placa de Video">
+          <h2  class="tituloCom">Placa de Vídeo</h2>
+          <p class="tituloLinha">A peça que mais influencia a qualidade visual e o FPS.</p>
+
+          <p class="descricao">Observe: resolução, VRAM e consumo</p>
+          <p class="informacaoComp">Maior impacto em jogos</p>
+        </div>
+
+        <div class="cardPlacaMae: card">
+          <img class="icons" src="assets/icons/icon-PlacaMae.svg" alt="Ícone Placa-Mãe">
+          <h2  class="tituloCom">Placa-Mãe</h2>
+          <p class="tituloLinha">Conecta tudo e define recursos e possibilidades de upgrade.</p>
+          <hr>
+          <p class="descricao">Observe: soquete, chipset e formato</p>
+          <p class="informacaoComp">Base da compatibilidade</p>
+        </div>
+
+        <div class="cardRAM: card">
+          <img class="icons" src="assets/icons/icon-RAM.svg" alt="Ícone Memória RAM">
+          <h2  class="tituloCom">Memória RAM</h2>
+          <p class="tituloLinha">Mantém jogos e aplicativos rápidos durante o uso.</p>
+          <hr>
+          <p class="descricao">Observe: capacidade, tipo e frequência</p>
+          <p class="informacaoComp">16 GB é o ideal</p>
+        </div>
+
+        <div class="cardArmazena: card">
+          <img class="icons" src="assets/icons/icon-Armaz.svg" alt="Ícone Armazenamento">
+          <h2  class="tituloCom">Armazenamento</h2>
+          <p class="tituloLinha">Guarda o sistema, jogos e arquivos com mais velocidade.</p>
+          <hr>
+          <p class="descricao">Observe: capacidade, formato e leitura</p>
+          <p class="informacaoComp">SSD NVMe recomendado</p>
+        </div>
+
+        <div class="cardFonte: card">
+          <img class="icons" src="assets/icons/icon-Fonte.svg" alt="Ícone Fonte">
+          <h2  class="tituloCom">Fonte</h2>
+          <p class="tituloLinha">Entrega energia estável e protege todo o investimento.</p>
+          <hr>
+          <p class="descricao">Observe: potência, selo e garantia</p>
+          <p class="informacaoComp">Nunca economize demais</p>
+        </div>
+
+        <div class="cardGabinte: card">
+          <img class="icons" src="assets/icons/icon-Gabinete.svg" alt="Ícone Gabinete">
+          <h2  class="tituloCom">Gabinte</h2>
+          <p class="tituloLinha">Organiza, protege e ajuda a resfriar os componentes.</p>
+          <hr>
+          <p class="descricao">Observe: formato, airflow e espaço</p>
+          <p class="informacaoComp">Confira as medidas</p>
+        </div>
+
+        <div class="cardRefrigeracao: card">
+          <img class="icons" src="assets/icons/icon-Cooler.svg" alt="Ícone Cooler">
+          <h2  class="tituloCom">Refrigeração</h2>
+          <p class="tituloLinha">Mantém temperaturas seguras e o desempenho consistente.</p>
+          <hr>
+          <p class="descricao">Observe: compatbilidade e ruido</p>
+          <p class="informacaoComp">Cooler Box pode bastar</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<footer class="footer-completo">
+  <div class="footer-grid">
+    <div class="footer-col">
+      <div class="footer-logo"><img class="logo" src="assets/images/logo.png" alt=""></div>
+      <p>Seu primeiro PC gamer, explicado peça por peça e sem complicação.</p>
+    </div>
+    <div class="footer-col">
+      <h4>Explore</h4>
+      <a  href="index.html">Ínicio</a>
+      <a  href="montagem.html">Montagem</a>
+      <a  href="componentes.html">Componentes</a>
+      <a  href="sobre.html">Sobre</a>
+    </div>
+    <div class="footer-col">
+      <h4>Aprenda</h4>
+      <a href="#">Guia para iniciantes</a>
+      <a href="#">Compatibilidade</a>
+      <a href="#">Dúvidades frequentes</a>
+    </div>
+    <div class="footer-col">
+      <h4>PCBuilder</h4>
+      <a href="#">Sobre o projeto</a>
+      <a href="#">Nossos príncipios</a>
+      <a href="#">Contato</a>
+    </div>
+  </div>
+  <div class="footer-copy">
+    © 2026 PCBuilder. Todos os direitos reservados. Feito para quem está começando.
+  </div>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>
