@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="pr-br">
+<html lang="pt-br">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport"
@@ -52,10 +52,20 @@
 
     </div>
 
+
     <div class="pecas">
-      <p class="descricao">0 de 8 peças </p>
-      <p class="porcentagemPecas">0%</p>
+        <div class="controlaPecas">
+          <p class="descricaoPecas descricao">0 de 7 peças </p>
+          <p class="porcentagemPecas">0%</p>
+        </div>
+
+        <div class="barraProgresso">
+          <div class="progressoPreenchido"></div>
+        </div>
+
+
     </div>
+
   </div>
 </section>
 
@@ -64,7 +74,7 @@
   <div class="divEsquerda">
     <p class="descricao">SUA MONTAGEM</p>
 
-    <div class="selecaoComponente">
+    <div class="selecaoComponente" data-categoria="cpu">
       <div class="controlaElementos">
         <img class="icons" src="assets/icons/icon-CPU.svg" alt="Ícone Processador">
         <h2 class="tituloPrincipal">Processador
@@ -74,7 +84,7 @@
 
     </div>
 
-    <div class="selecaoComponente">
+    <div class="selecaoComponente" data-categoria="placaMae">
       <div class="controlaElementos">
         <img class="icons" src="assets/icons/icon-PlacaMae.svg" alt="Ícone Placa-Mãe">
         <h2 class="tituloPrincipal">Placa-Mãe
@@ -84,7 +94,7 @@
 
     </div>
 
-    <div class="selecaoComponente">
+    <div class="selecaoComponente" data-categoria="gpu">
       <div class="controlaElementos">
         <img class="icons" src="assets/icons/icon-PlacaVideo.svg" alt="Ícone Placa de Video">
         <h2 class="tituloPrincipal"> Placa de video
@@ -94,17 +104,17 @@
 
     </div>
 
-    <div class="selecaoComponente">
+    <div class="selecaoComponente" data-categoria="memoriaRAM">
       <div class="controlaElementos">
         <img class="icons" src="assets/icons/icon-RAM.svg" alt="Ícone Memória RAM">
-        <h2 class="tituloPrincipal">  Memoria RAM
+        <h2 class="tituloPrincipal"> Memoria RAM
           <span class="pecaEscolhida">Pendente</span>
         </h2>
       </div>
 
     </div>
 
-    <div class="selecaoComponente">
+    <div class="selecaoComponente" data-categoria="armazenamento">
       <div class="controlaElementos">
         <img class="icons" src="assets/icons/icon-Armaz.svg" alt="Ícone Armazenamento">
         <h2 class="tituloPrincipal"> Armazenamento
@@ -114,7 +124,7 @@
 
     </div>
 
-    <div class="selecaoComponente">
+    <div class="selecaoComponente" data-categoria="fonte">
       <div class="controlaElementos">
         <img class="icons" src="assets/icons/icon-Fonte.svg" alt="Ícone Fonte">
         <h2 class="tituloPrincipal"> Fonte
@@ -123,7 +133,7 @@
       </div>
     </div>
 
-    <div class="selecaoComponente">
+    <div class="selecaoComponente" data-categoria="gabinete">
       <div class="controlaElementos">
         <img class="icons" src="assets/icons/icon-Gabinete.svg" alt="Ícone Gabinete">
         <h2 class="tituloPrincipal"> Gabinete
@@ -137,9 +147,10 @@
   <div class="divMeio">
 
     <div class="textoPrincipalMontagem">
-      <p class="etapa">ETAPA 0 DE 8</p>
-      <h2 class="tituloEtapa">Escolha sua placa-mãe</h2>
-      <p class="descricaoComponente">Ela conecta todas as peças. Já filtramos modelos compatíveis com seu processador.</p>
+      <p class="descricaoPecas descricao">ETAPA 1 DE 7</p>
+      <h2 class="tituloEtapa">Escolha seu processador</h2>
+      <p class="descricaoComponente">Processador é como o cérebro humano, ele precisa executar todos os cálculos,
+        pensamentos e comandos do seu sistema.</p>
     </div>
 
     <div class="divSugestao">
@@ -150,7 +161,7 @@
 
     <div class="divComponentes">
 
-      <div class="cardComponente">
+      <div class="cardComponente" data-categoria="placaMae" data-socket="am4">
         <div class="controlaElementos">
           <div class="iconComponente">
             <img class="iconsCards" src="assets/icons/icon-PlacaMae.svg" alt="Ícone Placa-Mãe">
@@ -163,7 +174,7 @@
         </div>
       </div>
 
-      <div class="cardComponente">
+      <div class="cardComponente" data-categoria="placaMae" data-socket="am4">
         <div class="controlaElementos">
           <div class="iconComponente">
             <img class="iconsCards" src="assets/icons/icon-PlacaMae.svg" alt="Ícone Placa-Mãe">
@@ -178,7 +189,7 @@
 
       </div>
 
-      <div class="cardComponente">
+      <div class="cardComponente" data-categoria="placaMae" data-socket="am4">
 
         <div class="controlaElementos">
           <div class="iconComponente">
@@ -192,12 +203,255 @@
         </div>
       </div>
 
+      <div class="cardComponente" data-categoria="cpu" data-socket="am4" data-consumo="65">
+        <div class="controlaElementos">
+          <div class="iconComponente">
+            <img class="iconsCards" src="assets/icons/icon-CPU.svg" alt="Ícone Processador">
+          </div>
+          <div class="areaPreco">
+            <h2 class="nomeComponente"> AMD Ryzen 5 5600</h2>
+            <p class="descricao"> 6 núcleos e 12 threads • Socket(AM4) • 3.5 GHz • Zen 3</p>
+            <p class="preco">R$ 750</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="cardComponente" data-categoria="cpu" data-socket="lga1700" data-consumo="148">
+        <div class="controlaElementos">
+          <div class="iconComponente">
+            <img class="iconsCards" src="assets/icons/icon-CPU.svg" alt="Ícone Processador">
+          </div>
+          <div class="areaPreco">
+            <h2 class="nomeComponente"> Intel Core i5-13400F</h2>
+            <p class="descricao">10 núcleos e 16 threads • Socket(LGA) • 4.6 GHz</p>
+            <p class="preco">R$ 1000</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="cardComponente" data-categoria="cpu" data-socket="am5" data-consumo="88">
+        <div class="controlaElementos">
+          <div class="iconComponente">
+            <img class="iconsCards" src="assets/icons/icon-CPU.svg" alt="Ícone Processador">
+          </div>
+          <div class="areaPreco">
+            <h2 class="nomeComponente">AMD Ryzen 5 7600</h2>
+            <p class="descricao"> 6 núcleos e 12 threads • Socket(AM5) • 5.1 GHz • Zen 4</p>
+            <p class="preco">R$ 980</p>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="cardComponente" data-categoria="gpu" data-consumo="120">
+        <div class="controlaElementos">
+          <div class="iconComponente">
+            <img class="iconsCards" src="assets/icons/icon-PlacaVideo.svg" alt="Ícone Placa de Vídeo">
+          </div>
+          <div class="areaPreco">
+            <h2 class="nomeComponente">AMD Radeon RX 6600: XFX SWFT210 RX 6600</h2>
+            <p class="descricao">VRAM: 8GB GDDR6 • Consumo: 132W</p>
+            <p class="preco">R$ 1400</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="cardComponente" data-categoria="gpu" data-consumo="165">
+        <div class="controlaElementos">
+          <div class="iconComponente">
+            <img class="iconsCards" src="assets/icons/icon-PlacaVideo.svg" alt="Ícone Placa de Vídeo">
+          </div>
+          <div class="areaPreco">
+            <h2 class="nomeComponente">AMD Radeon RX 7600</h2>
+            <p class="descricao">VRAM: 8GB GDDR6 • Consumo: 162W</p>
+            <p class="preco">R$ 1800</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="cardComponente" data-categoria="gpu" data-consumo="115">
+        <div class="controlaElementos">
+          <div class="iconComponente">
+            <img class="iconsCards" src="assets/icons/icon-PlacaVideo.svg" alt="Ícone Placa de Vídeo">
+          </div>
+          <div class="areaPreco">
+            <h2 class="nomeComponente">NVIDIA GeForce RTX 4060</h2>
+            <p class="descricao">VRAM: 8GB GDDR6 • Consumo: 115W</p>
+            <p class="preco">R$ 1900</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="cardComponente" data-categoria="memoriaRAM">
+        <div class="controlaElementos">
+          <div class="iconComponente">
+            <img class="iconsCards" src="assets/icons/icon-RAM.svg" alt="Ícone Memoria RAM">
+          </div>
+          <div class="areaPreco">
+            <h2 class="nomeComponente">Kingston FURY Beast DDR4:</h2>
+            <p class="descricao">8GB DDR4 • Frequencia: 2666 a 3200 MHz</p>
+            <p class="preco">R$ 159</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="cardComponente" data-categoria="memoriaRAM">
+        <div class="controlaElementos">
+          <div class="iconComponente">
+            <img class="iconsCards" src="assets/icons/icon-RAM.svg" alt="Ícone Memoria RAM">
+          </div>
+          <div class="areaPreco">
+            <h2 class="nomeComponente">Corsair Vengeance RGB DDR5</h2>
+            <p class="descricao">32GB DDR5(Dois pentes de 16 GB) • Frequência: 5200 a 7200 MHz</p>
+            <p class="preco">R$ 1699</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="cardComponente" data-categoria="memoriaRAM">
+        <div class="controlaElementos">
+          <div class="iconComponente">
+            <img class="iconsCards" src="assets/icons/icon-RAM.svg" alt="Ícone Memoria RAM">
+          </div>
+          <div class="areaPreco">
+            <h2 class="nomeComponente">G.Skill Trident Z5 Neo DDR5</h2>
+            <p class="descricao">64GB DDR5(Dois pentes de 32 GB) • Frequencia: 5600 a 6400 MHz</p>
+            <p class="preco">R$ 14114</p>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="cardComponente" data-categoria="armazenamento">
+        <div class="controlaElementos">
+          <div class="iconComponente">
+            <img class="iconsCards" src="assets/icons/icon-Armaz.svg" alt="Ícone Armazenamento">
+          </div>
+          <div class="areaPreco">
+            <h2 class="nomeComponente">SSD NVMe M.2 (PCIe 4.0)</h2>
+            <p class="descricao">1TB • Leitura 3500MBS e Gravação 2100MBS</p>
+            <p class="preco">R$ 1329</p>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="cardComponente" data-categoria="armazenamento">
+        <div class="controlaElementos">
+          <div class="iconComponente">
+            <img class="iconsCards" src="assets/icons/icon-Armaz.svg" alt="Ícone Armazenamento">
+          </div>
+          <div class="areaPreco">
+            <h2 class="nomeComponente">SSD SATA kingston 2.5 polegadas</h2>
+            <p class="descricao">480GB • Leitura 500MBS e Gravação 450MBS</p>
+            <p class="preco">R$ 647</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="cardComponente" data-categoria="armazenamento">
+        <div class="controlaElementos">
+          <div class="iconComponente">
+            <img class="iconsCards" src="assets/icons/icon-Armaz.svg" alt="Ícone Armazenamento">
+          </div>
+          <div class="areaPreco">
+            <h2 class="nomeComponente">HD Seagate 2TB Barracuda</h2>
+            <p class="descricao">2TB • Velocidade de rotação: 7200RPM</p>
+            <p class="preco">R$ 814</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="cardComponente" data-categoria="fonte" data-potencia="650">
+        <div class="controlaElementos">
+          <div class="iconComponente">
+            <img class="iconsCards" src="assets/icons/icon-Fonte.svg" alt="Ícone Fonte">
+          </div>
+          <div class="areaPreco">
+            <h2 class="nomeComponente">Corsair CX650 </h2>
+            <p class="descricao">(650W) • Certificação 80 Plus Bronze</p>
+            <p class="preco">R$ 460</p>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="cardComponente" data-categoria="fonte" data-potencia="850">
+        <div class="controlaElementos">
+          <div class="iconComponente">
+            <img class="iconsCards" src="assets/icons/icon-Fonte.svg" alt="Ícone Fonte">
+          </div>
+          <div class="areaPreco">
+            <h2 class="nomeComponente">XPG Core Reactor </h2>
+            <p class="descricao">(850W) • Certificação 80 Plus Gold</p>
+            <p class="preco">R$ 900</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="cardComponente" data-categoria="fonte" data-potencia="1000">
+        <div class="controlaElementos">
+          <div class="iconComponente">
+            <img class="iconsCards" src="assets/icons/icon-Fonte.svg" alt="Ícone Fonte">
+          </div>
+          <div class="areaPreco">
+            <h2 class="nomeComponente">Seasonic Prime TX-1000 </h2>
+            <p class="descricao">(1000W) • Certificação 80 Plus Titanium</p>
+            <p class="preco">R$ 1.800</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="cardComponente" data-categoria="gabinete">
+        <div class="controlaElementos">
+          <div class="iconComponente">
+            <img class="iconsCards" src="assets/icons/icon-Gabinete.svg" alt="Ícone Gabinete">
+          </div>
+          <div class="areaPreco">
+            <h2 class="nomeComponente">Corsair 4000D Airflow </h2>
+            <p class="descricao">Um gabinete mid-tower focado em excelente resfriamento. Possui um painel frontal em
+              grade (mesh) que otimiza a entrada de ar, além de um ótimo espaço interno para organização de cabos.</p>
+            <p class="preco">R$ 580</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="cardComponente" data-categoria="gabinete">
+        <div class="controlaElementos">
+          <div class="iconComponente">
+            <img class="iconsCards" src="assets/icons/icon-Gabinete.svg" alt="Ícone Gabinete">
+          </div>
+          <div class="areaPreco">
+            <h2 class="nomeComponente">Lian Li O11 Dynamic EVO </h2>
+            <p class="descricao">Gabinete estilo "aquário" com painéis de vidro temperado na frente e na lateral. É o
+              favorito de quem quer expor os componentes internos e montar sistemas complexos de refrigeração líquida
+              (Water Cooler personalizado).</p>
+            <p class="preco">R$ 1100</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="cardComponente" data-categoria="gabinete">
+        <div class="controlaElementos">
+          <div class="iconComponente">
+            <img class="iconsCards" src="assets/icons/icon-Gabinete.svg" alt="Ícone Gabinete">
+          </div>
+          <div class="areaPreco">
+            <h2 class="nomeComponente">Pichau Apus Black </h2>
+            <p class="descricao">Uma opção nacional focada em custo-benefício. É compacto, possui lateral em vidro
+              temperado e frente em malha texturizada para garantir uma boa circulação de ar sem gastar muito.</p>
+            <p class="preco">R$ 250</p>
+          </div>
+        </div>
+      </div>
+
     </div>
     <div class="botoes">
 
       <button class="voltar"><img class="icons" src="assets/icons/icon-Voltar.svg" alt="Ícone de Voltar">Voltar
       </button>
-      <button type="button" class="montagem">Continuar com esta <img class="icons"
+      <button class="finalizarMontagem montagem">Finalizar Montagem</button>
+      <button class="continuarMontagem montagem">Continuar com esta <img class="icons"
                                                                      src="assets/icons/icon-Avancar.svg">
       </button>
     </div>
@@ -214,15 +468,58 @@
 
     <div class="cardCompatibilidade">
       <h2 class="compatibilidade">Compatibilidade</h2>
+      <p class="statusSocket"></p>
+      <p class="statusConsumo"></p>
     </div>
 
     <div class="cardPecasEscolhidas">
       <h2 class="pecasEscolhidas">Peças escolhidas</h2>
+      <div class="controlaElementos itemResumo" data-categoria="cpu">
+        <img class="icons" src="assets/icons/icon-CPU.svg" alt="Ícone Processador">
+        <p><span class="resumoCpu"></span></p>
+      </div>
+       <div class="controlaElementos itemResumo" data-categoria="placaMae">
+         <img class="icons" src="assets/icons/icon-PlacaMae.svg" alt="Ícone Placa-Mãe">
+         <p><span class="resumoPlacaMae"></span></p>
+       </div>
+      <div class="controlaElementos itemResumo" data-categoria="gpu">
+        <img class="icons" src="assets/icons/icon-PlacaVideo.svg" alt="Ícone Placa de Vídeo">
+        <p><span class="resumoGpu"></span></p>
+      </div>
+      <div class="controlaElementos itemResumo" data-categoria="memoriaRAM">
+        <img class="icons" src="assets/icons/icon-RAM.svg" alt="Ícone Memória RAM">
+        <p><span class="resumoRAM"></span></p>
+      </div>
+      <div class="controlaElementos itemResumo" data-categoria="armazenamento">
+        <img class="icons" src="assets/icons/icon-Armaz.svg" alt="Ícone Armazenamento">
+        <p><span class="resumoArmazenamento"></span></p>
+      </div>
+      <div class="controlaElementos itemResumo" data-categoria="fonte">
+        <img class="icons" src="assets/icons/icon-Fonte.svg" alt="ícone Fonte">
+        <p><span class="resumoFonte"></span></p>
+      </div>
+      <div class="controlaElementos itemResumo" data-categoria="gabinete">
+        <img class="icons" src="assets/icons/icon-Gabinete.svg" alt="">
+        <p><span class="resumoGabinete"></span></p>
+      </div>
+
+
+
+
+
+
     </div>
 
+    <div class="botaoFinalizar">
+
+    </div>
   </div>
 
 </section>
+
+<div class="snackbar" role="status" aria-live="polite">
+  <span class="mensagemSnackbar"></span>
+</div>
 
 <footer class="footer-completo">
   <div class="footer-grid">
@@ -232,10 +529,10 @@
     </div>
     <div class="footer-col">
       <h4>Explore</h4>
-      <a  href="index.html">Ínicio</a>
-      <a  href="montagem.html">Montagem</a>
-      <a  href="componentes.html">Componentes</a>
-      <a  href="sobre.html">Sobre</a>
+      <a href="index.html">Ínicio</a>
+      <a href="montagem.html">Montagem</a>
+      <a href="componentes.html">Componentes</a>
+      <a href="sobre.html">Sobre</a>
     </div>
     <div class="footer-col">
       <h4>Aprenda</h4>

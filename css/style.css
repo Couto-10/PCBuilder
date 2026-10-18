@@ -690,9 +690,11 @@ header {
 }
 
 .textoMontagem {
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: repeat(2, 500px);
   align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
   width: 100%;
 }
 .tituloMontagem{
@@ -703,8 +705,9 @@ header {
 
 .pecas {
   display: flex;
-  flex-direction: row;
-  gap: 40px;
+  flex-direction: column;
+  gap: 4px;
+  width: 100%;
   align-items: center;
 }
 
@@ -766,9 +769,6 @@ header {
   padding: 10px;
 }
 
-.nomeComponente{
-
-}
 
 .divComponentes{
   display: flex;
@@ -792,6 +792,14 @@ header {
   box-shadow: 0 5px 10px rgb(201 211 229);
 }
 
+.selecionado{
+  border: 2px solid #3768ff;
+  background-color: #e7edff;
+  transform: scale(0.98);
+}
+.oculto{
+  display: none;
+}
 .cardComponente:hover{
   transform: scale(0.95);
   box-shadow: 0 5px 10px rgb(201 211 229);
@@ -1412,4 +1420,81 @@ form{
   color: #64748b;
 }
 
+
+.snackbar {
+  position: fixed;
+  top: 24px;
+  left: 50%;
+
+  transform: translate(-50%, -20px);
+  opacity: 0;
+  visibility: hidden;
+
+  background-color: #20242c;
+  color: #ffffff;
+  padding: 16px 24px;
+  border-radius: 10px;
+
+  max-width: calc(100% - 32px);
+  width: max-content;
+  z-index: 1000;
+
+  transition: opacity 0.3s ease, transform 0.3s ease,
+  visibility 0.3s ease;
+}
+
+.snackbar.visivel {
+  opacity: 1;
+  visibility: visible;
+  transform: translate(-50%, 0);
+}
+
+.mensagemSnackbar {
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+
+.barraProgresso {
+  width: 100%;
+  height: 8px;
+  background-color: #e5e7eb;
+  border-radius: 20px;
+  overflow: hidden;
+  margin-top: 12px;
+}
+
+.progressoPreenchido {
+  width: 0%;
+  height: 100%;
+  background-color: #22c55e;
+  border-radius: 20px;
+  transition: width 0.35s ease;
+}
+
+.controlaPecas{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  gap: 50px;
+}
+
+.porcentagemPecas{
+  font-weight: bold;
+  color: #22c55e;
+}
+
+
+.itemResumo .icons {
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.25s ease;
+}
+
+.itemResumo.temPeca .icons {
+  visibility: visible;
+  opacity: 1;
+}
 
