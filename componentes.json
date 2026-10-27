@@ -1,0 +1,262 @@
+[
+  {
+    "nome": "Intel Core i5-14400",
+    "categoria": "cpu",
+    "preco": 400,
+    "socket": "lga1700",
+    "consumo": 148,
+    "descricao": "Socket (LGA1700) • Raptor Lake Refresh • 10 núcleos (6 P-cores + 4 E-cores) e 16 threads • 2.5 GHz a 4.7 GHz",
+    "ajuda": {
+      "funcao": "Executa as instruções, cálculos e tarefas do sistema operacional e dos programas.",
+      "oQueObservar": "Exige uma placa-mãe de socket LGA1700 (chipsets H610, B760 ou Z790). É compatível com memórias tanto DDR4 quanto DDR5, dependendo da placa-mãe escolhida.",
+      "dicas": "Excelente processador intermediário para jogos e multitarefas. Ele tem consumo base de 65W e já acompanha o cooler padrão Intel Laminar RM1 na caixa."
+    }
+  },
+  {
+    "nome": "AMD Ryzen 5 3600",
+    "categoria": "cpu",
+    "preco": 550,
+    "socket": "am4",
+    "consumo": 65,
+    "descricao": "6 núcleos e 12 threads • Socket(AM4) • 3.5 GHz • Zen 2",
+    "ajuda": {
+      "funcao": "Executa instruções e cálculos dos programas.",
+      "oQueObservar": "Desempenho de entrada/intermediário, exige placas-mãe de socket AM4 e memórias DDR4.",
+      "dicas": "Confira os requisitos do processador antes de escolher a placa-mãe. Já vem com o cooler original Wraith Stealth na caixa."
+    }
+  },
+  {
+    "nome": "AMD Ryzen 5 5600",
+    "categoria": "cpu",
+    "preco": 850,
+    "socket": "am4",
+    "consumo": 65,
+    "descricao": "6 núcleos e 12 threads • Socket AM4 • 3.5 GHz • Zen 3",
+    "ajuda": {
+      "funcao": "Executa as instruções, cálculos e tarefas do sistema operacional e dos programas.",
+      "oQueObservar": "Exige o socket AM4. Seu consumo de 65W é equilibrado, operando bem na maioria das placas-mãe intermediárias.",
+      "dicas": "Excelente custo-benefício para jogos. Ele vem com o cooler de fábrica na caixa, que dá conta do recado se usado sem overclock."
+    }
+  },
+  {
+    "nome": "RX 6600 8 GB",
+    "categoria": "gpu",
+    "preco": 1200,
+    "consumo": 132,
+    "potencia": 0,
+    "descricao": "8 GB de VRAM • Arquitetura RDNA 2",
+    "ajuda": {
+      "funcao": "Gera as imagens, elementos visuais e processa os gráficos dos jogos e softwares de renderização.",
+      "oQueObservar": "Possui 8 GB de VRAM e interface PCIe 4.0 x8. Tem consumo baixo (132W), sendo ideal para fontes de alimentação de entrada.",
+      "dicas": "Uma das campeãs absolutas de custo-benefício para jogar em Full HD (1080p) com ótima qualidade gráfica."
+    }
+  },
+  {
+    "nome": "AMD Radeon RX 7600 8 GB",
+    "categoria": "gpu",
+    "preco": 1800,
+    "consumo": 165,
+    "descricao": "8 GB VRAM GDDR6 • PCIe 4.0 • Focada em jogos em Full HD",
+    "ajuda": {
+      "funcao": "Gera as imagens, gráficos dos jogos e renderizações visuais do computador.",
+      "oQueObservar": "Possui 8 GB de memória de vídeo, ideal para rodar jogos modernos na resolução Full HD. Seu consumo de referência é de 165W.",
+      "dicas": "Uma das melhores opções em custo-benefício atuais para quem quer jogar tudo sem gastar uma fortuna."
+    }
+  },
+  {
+    "nome": "NVIDIA GeForce RTX 4060 Ti 8 GB",
+    "categoria": "gpu",
+    "preco": 2500,
+    "consumo": 165,
+    "descricao": "8 GB VRAM GDDR6 • PCIe 4.0 • DLSS 3 e Ray Tracing",
+    "ajuda": {
+      "funcao": "Gera as imagens, gráficos dos jogos e renderizações visuais do computador.",
+      "oQueObservar": "Consome cerca de 160W a 165W dependendo do modelo. Conta com tecnologias avançadas como DLSS 3 (geração de quadros por inteligência artificial).",
+      "dicas": "Embora tenha os mesmos 8 GB do modelo concorrente, ela entrega mais tecnologias e desempenho superior em Ray Tracing."
+    }
+  },
+  {
+    "nome": "ASUS Prime H610M-E D4",
+    "categoria": "placaMae",
+    "preco": 550,
+    "socket": "lga1700",
+    "consumo": 20,
+    "descricao": "Chipset H610 • Formato Micro-ATX • Suporte a memórias DDR4",
+    "ajuda": {
+      "funcao": "Interliga fisicamente e eletricamente todos os componentes do computador.",
+      "oQueObservar": "Placa de entrada compatível com processadores Intel de 12ª, 13ª e 14ª gerações. Limitada ao padrão de memórias DDR4 e sem suporte a overclock.",
+      "dicas": "Combina perfeitamente com o Core i5-14400 para quem busca economizar mantendo as memórias DDR4. Certifique-se de comprar em lojas que realizem a atualização de BIOS para a 14ª geração."
+    }
+  },
+  {
+    "nome": "ASUS Prime A520M-K",
+    "categoria": "placaMae",
+    "preco": 450,
+    "socket": "am4",
+    "consumo": 15,
+    "descricao": "Chipset A520 • Formato Micro-ATX • Suporte a memórias DDR4",
+    "ajuda": {
+      "funcao": "Interliga fisicamente e eletricamente todos os componentes do computador.",
+      "oQueObservar": "Placa de entrada com socket AM4. Não permite overclock e possui circuitos de energia mais simples, limitando o uso de processadores muito pesados.",
+      "dicas": "Combina perfeitamente com o Ryzen 5 3600. Lembre-se de verificar se a versão da BIOS está atualizada para o processador escolhido."
+    }
+  },
+  {
+    "nome": "Gigabyte B450M DS3H",
+    "categoria": "placaMae",
+    "preco": 500,
+    "socket": "am4",
+    "consumo": 25,
+    "descricao": "Chipset B450 • Formato Micro-ATX • 4 Slots DDR4",
+    "ajuda": {
+      "funcao": "Interliga fisicamente e eletricamente todos os componentes do computador.",
+      "oQueObservar": "Placa intermediária com socket AM4. Oferece mais recursos de expansão (como 4 slots de RAM) e melhor dissipação que os modelos A520.",
+      "dicas": "Dá mais liberdade para upgrades futuros. Certifique-se de atualizar a BIOS caso decida instalar um processador da série 5000 nela."
+    }
+  },
+  {
+    "nome": "Kingston Fury Beast 16 GB DDR4",
+    "categoria": "memoriaRAM",
+    "preco": 280,
+    "consumo": 4,
+    "descricao": "16 GB DDR4 • 3200 MHz",
+    "ajuda": {
+      "funcao": "Armazena dados temporários que o processador precisa acessar rapidamente para rodar jogos e aplicativos.",
+      "oQueObservar": "Módulo único (1 single stick) de 16 GB DDR4 com frequência de 3200 MHz, operando em Single Channel se usada sozinha.",
+      "dicas": "Se o orçamento permitir, prefira comprar dois pentes idênticos para ativar o Dual Channel e liberar o desempenho máximo do processador."
+    }
+  },
+  {
+    "nome": "Kingston Fury Beast 32 GB (2 × 16 GB) DDR4 3200 MHz",
+    "categoria": "memoriaRAM",
+    "preco": 450,
+    "consumo": 6,
+    "descricao": "Kit Dual Channel (2x 16 GB) • Frequência 3200 MHz • CL16",
+    "ajuda": {
+      "funcao": "Armazena temporariamente os dados dos programas e jogos que estão abertos no momento.",
+      "oQueObservar": "Padrão DDR4, compatível com as placas-mãe AM4. O consumo de energia do kit inteiro fica na casa dos 6W.",
+      "dicas": "Por ser um kit com dois pentes, ele ativa o modo Dual Channel automaticamente, dobrando a velocidade de comunicação com o processador."
+    }
+  },
+  {
+    "nome": "Corsair Vengeance LPX 32 GB (2 × 16 GB) DDR4 3200 MHz",
+    "categoria": "memoriaRAM",
+    "preco": 500,
+    "consumo": 6,
+    "descricao": "Kit Dual Channel (2x 16 GB) • Perfil baixo • Frequência 3200 MHz",
+    "ajuda": {
+      "funcao": "Armazena temporariamente os dados dos programas e jogos que estão abertos no momento.",
+      "oQueObservar": "Formato de perfil baixo (Low Profile), o que significa que os pentes são menores e não batem em coolers de processador muito grandes.",
+      "dicas": "Ideal para montagens compactas ou para quem vai usar Air Coolers gigantes que costumam cobrir os slots de memória."
+    }
+  },
+  {
+    "nome": "Kingston NV2 1 TB",
+    "categoria": "armazenamento",
+    "preco": 450,
+    "consumo": 5,
+    "descricao": "SSD NVMe • 1 TB",
+    "ajuda": {
+      "funcao": "Armazena de forma permanente o sistema operacional, jogos, programas e todos os seus arquivos pessoais.",
+      "oQueObservar": "Formato M.2 com conexão NVMe PCIe 4.0. É drasticamente mais rápido que um SSD SATA comum ou um HD antigo.",
+      "dicas": "Excelente opção para instalar jogos modernos, reduzindo os tempos de carregamento (loading) a praticamente zero."
+    }
+  },
+  {
+    "nome": "Kingston A400 SSD SATA 480 GB",
+    "categoria": "armazenamento",
+    "preco": 250,
+    "consumo": 3,
+    "descricao": "SSD de 2.5 polegadas • Conexão SATA III • Velocidades até 500 MB/s",
+    "ajuda": {
+      "funcao": "Guarda arquivos, jogos e o sistema operacional de forma permanente.",
+      "oQueObservar": "Usa a conexão SATA (cabos). É cerca de 5 vezes mais rápido que um HD comum, fazendo o computador ligar em poucos segundos.",
+      "dicas": "Obrigatório para instalar o Windows. Evite usar apenas HDs mecânicos hoje em dia para não travar o sistema."
+    }
+  },
+  {
+    "nome": "Seagate Barracuda HDD 2 TB",
+    "categoria": "armazenamento",
+    "preco": 450,
+    "consumo": 6,
+    "descricao": "Disco Rígido Mecânico • 3.5 polegadas • 7200 RPM",
+    "ajuda": {
+      "funcao": "Guarda arquivos, jogos e o sistema operacional de forma permanente.",
+      "oQueObservar": "Armazenamento mecânico de alta capacidade. É muito mais lento que um SSD, mas oferece muito mais espaço por um preço menor.",
+      "dicas": "Use este componente apenas para guardar arquivos pesados que não exigem velocidade, como fotos, filmes, vídeos e backups secundários."
+    }
+  },
+  {
+    "nome": "MSI MAG A650BN",
+    "categoria": "fonte",
+    "preco": 390,
+    "potencia": 650,
+    "descricao": "650 W • Certificação 80 Plus Bronze",
+    "ajuda": {
+      "funcao": "Alimenta o computador transformando a corrente alternada da tomada em corrente contínua segura para as peças.",
+      "oQueObservar": "Potência de 650W e certificação 80 Plus Bronze. Fornece margem confortável e segura para placas de vídeo intermediárias e avançadas.",
+      "dicas": "Excelente escolha para quem planeja colocar placas de vídeo como a RTX 4060 Ti ou RX 7600 sem se preocupar com falta de energia."
+    }
+  },
+  {
+    "nome": "MSI MAG A550BN 550 W",
+    "categoria": "fonte",
+    "preco": 350,
+    "potencia": 550,
+    "descricao": "Potência de 550W • Certificação 80 Plus Bronze • Fonte de entrada confiável",
+    "ajuda": {
+      "funcao": "Transforma a energia da tomada e distribui nas voltagens corretas para cada peça do PC.",
+      "oQueObservar": "Entrega 550W de potência nominal. Possui boa eficiência e proteções elétricas básicas para proteger seus componentes.",
+      "dicas": "Perfeita para builds de custo-benefício equipadas com placas de vídeo de menor consumo, como a RX 6600."
+    }
+  },
+  {
+    "nome": "Corsair CV550 550 W",
+    "categoria": "fonte",
+    "preco": 360,
+    "potencia": 550,
+    "descricao": "Potência de 550W • Certificação 80 Plus Bronze • Cabeamento Fixo Sleeve",
+    "ajuda": {
+      "funcao": "Transforma a corrente elétrica da tomada para alimentar os componentes do computador com segurança.",
+      "oQueObservar": "Fornece 550W estáveis. Conta com a confiabilidade da linha tradicional CV da Corsair, sendo muito estável na linha de 12V.",
+      "dicas": "Ótima alternativa para setups compactos de entrada ou intermediários. Seus cabos pretos planos facilitam a organização (cable management) atrás do gabinete."
+    }
+  },
+  {
+    "nome": "Montech Air 100 ARGB",
+    "categoria": "gabinete",
+    "preco": 320,
+    "descricao": "Gabinete Micro-ATX • Lateral em vidro temperado • Painel frontal mesh • 4 ventoinhas ARGB inclusas",
+    "ajuda": {
+      "funcao": "Aloja, protege e organiza todos os componentes internos do computador, garantindo a circulação do ar.",
+      "oQueObservar": "Compatível com placas-mãe até o tamanho Micro-ATX. Possui abertura frontal em malha (mesh) para máxima captação de ar frio.",
+      "dicas": "Excelente escolha para quem busca estética e desempenho térmico, pois já vem com 4 fans ARGB que podem ter as cores customizadas e controladas."
+    }
+  },
+  {
+    "nome": "Montech X3 Mesh",
+    "categoria": "gabinete",
+    "preco": 350,
+    "descricao": "Lateral em vidro temperado • Painel frontal em malha mesh • Ventoinhas inclusas",
+    "ajuda": {
+      "funcao": "Aloja, protege e organiza todos os componentes internos do computador.",
+      "oQueObservar": "A frente em malha perfurada (mesh) garante um excelente fluxo de ar, impedindo que o ar quente fique preso lá dentro.",
+      "dicas": "Excelente custo-benefício, pois costuma vir de fábrica com várias ventoinhas inclusas, economizando no orçamento de refrigeração."
+    }
+  },
+  {
+    "nome": "Cooler Master MasterBox Q300L",
+    "categoria": "gabinete",
+    "preco": 300,
+    "descricao": "Formato compacto • Filtros de poeira magnéticos • Painel modular",
+    "ajuda": {
+      "funcao": "Aloja, protege e organiza todos os componentes internos do computador.",
+      "oQueObservar": "Modelo mais compacto voltado para placas-mãe Micro-ATX (como as duas listadas). Possui painel de conexões que pode ser ajustado em posições diferentes.",
+      "dicas": "Ótimo para quem tem pouco espaço na mesa, mas preste atenção ao tamanho máximo da placa de vídeo e do cooler que pretende colocar nele."
+    }
+  }
+]
+
+
+
+

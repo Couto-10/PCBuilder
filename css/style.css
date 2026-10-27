@@ -105,13 +105,13 @@ header {
   max-width: 560px;
   font-weight: bold;
 
-  span{
+  span {
     color: #526079;
     font-size: 15px;
   }
 }
 
-.tituloPrincipal2{
+.tituloPrincipal2 {
   font-size: 30px;
   color: #14203a;
   display: flex;
@@ -160,6 +160,16 @@ header {
   max-width: 560px;
   text-align: center;
 }
+
+
+.descricaoComponenteCard {
+  color: #526079;
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 1.5;
+  max-width: 100%;
+}
+
 
 .informacao {
   color: #3768ff;
@@ -267,7 +277,6 @@ header {
   height: auto;
   display: block;
 }
-
 
 
 .cardSecundario {
@@ -485,7 +494,7 @@ header {
 
 }
 
-.controlaElementos2{
+.controlaElementos2 {
   display: flex;
   flex-direction: column;
   gap: 15px;
@@ -637,6 +646,17 @@ header {
     box-shadow: 0 5px 10px rgb(201 211 229);
   }
 
+  .tituloHero {
+    font-size: clamp(2.5rem, 8vw, 3.5rem);
+  }
+
+  .secaoHero {
+    padding: 30px 20px;
+  }
+
+  .botoesPrincipais {
+    flex-wrap: wrap;
+  }
 
   .secaoHero {
     grid-template-columns: 1fr;
@@ -649,6 +669,35 @@ header {
   .cardSecundario {
     width: 100%;
     flex-direction: column;
+  }
+
+  .montarPC {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    width: 100%;
+    min-width: 0;
+    padding: 0 16px;
+    gap: 20px;
+    box-sizing: border-box;
+  }
+
+  .divEsquerda,
+  .divMeio,
+  .divDireita {
+    width: 100%;
+    min-width: 0;
+    max-width: 100%;
+    box-sizing: border-box;
+  }
+
+  .textoMontagem {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 20px;
+  }
+
+  .tituloMontagem {
+    font-size: clamp(2rem, 7vw, 3rem);
   }
 
 
@@ -697,7 +746,8 @@ header {
   flex-direction: row;
   width: 100%;
 }
-.tituloMontagem{
+
+.tituloMontagem {
   font-weight: bold;
   font-size: 60px;
   color: #17233d;
@@ -718,7 +768,7 @@ header {
   gap: 10px;
 }
 
-.montarPC{
+.montarPC {
   display: grid;
   grid-template-columns: 280px minmax(0, 1fr) 280px;
   gap: 24px;
@@ -729,7 +779,7 @@ header {
   width: 100%;
 }
 
-.divEsquerda{
+.divEsquerda {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -741,22 +791,23 @@ header {
   width: 100%;
 }
 
-.selecaoComponente{
+.selecaoComponente {
   width: 100%;
   min-height: 50px;
   padding: 0 10px;
   box-shadow: 0 5px 10px rgb(201 211 229);
   transition: transform 300ms ease, box-shadow 300ms ease, background-color 200ms ease, border-color 200ms ease;
   border-radius: 10px;
+  cursor: pointer;
 }
 
-.selecaoComponente:hover{
+.selecaoComponente:hover {
   transform: scale(1.05);
   border: #3768ff 2px solid;
   background-color: #e7edff;
 }
 
-.divMeio{
+.divMeio {
   display: flex;
   flex-direction: column;
   gap: 20px;
@@ -767,10 +818,11 @@ header {
   width: 100%;
   min-height: calc(90vh - 50px);
   padding: 10px;
+  position: relative;
 }
 
 
-.divComponentes{
+.divComponentes {
   display: flex;
   flex-direction: column;
   gap: 20px;
@@ -780,7 +832,7 @@ header {
 
 }
 
-.cardComponente{
+.cardComponente {
   display: flex;
   flex-direction: column;
   padding: 20px 40px;
@@ -790,17 +842,20 @@ header {
   border-radius: 15px;
   transition: transform 300ms ease, box-shadow 300ms ease, background-color 200ms ease, border-color 200ms ease;
   box-shadow: 0 5px 10px rgb(201 211 229);
+  cursor: pointer;
 }
 
-.selecionado{
+.selecionado {
   border: 2px solid #3768ff;
   background-color: #e7edff;
   transform: scale(0.98);
 }
-.oculto{
+
+.oculto {
   display: none;
 }
-.cardComponente:hover{
+
+.cardComponente:hover {
   transform: scale(0.95);
   box-shadow: 0 5px 10px rgb(201 211 229);
   background-color: #e7edff;
@@ -808,13 +863,13 @@ header {
 }
 
 
-.controlaElementos{
+.controlaElementos {
   display: flex;
   flex-direction: row;
   gap: 20px;
 }
 
-.divSugestao{
+.divSugestao {
   display: flex;
   flex-direction: row;
   gap: 20px;
@@ -823,22 +878,22 @@ header {
 
 }
 
-.recomendado{
+.recomendado {
   padding: 10px 20px;
   border-radius: 25px;
   border: none;
-  background-color: #f7f9fc ;
+  background-color: #f7f9fc;
   color: #526079;
   box-shadow: 0 5px 10px rgb(201 211 229);
   transition: 300ms ease, background-color 300ms ease, border-color 300ms ease, color 300ms ease;
 }
 
-.recomendado:hover{
+.recomendado:hover {
   background-color: #3768ff;
   color: #ffffff;
 }
 
-.menorPreco{
+.menorPreco {
   padding: 10px 20px;
   border-radius: 25px;
   color: #526079;
@@ -847,42 +902,47 @@ header {
   box-shadow: 0 5px 10px rgb(201 211 229);
   transition: 300ms ease, background-color 300ms ease, border-color 300ms ease, color 300ms ease;
 }
-.menorPreco:hover{
+
+.menorPreco:hover {
   background-color: #3768ff;
   color: #ffffff;
 }
 
-.textoPrincipalMontagem{
+.textoPrincipalMontagem {
   padding: 20px;
   gap: 10px;
   display: flex;
   flex-direction: column;
 
-  .descricaoComponente{
+  .descricaoComponente {
     max-width: 560px;
     color: #526079;
     font-weight: bold;
     font-size: 18px;
   }
-  .tituloEtapa{
+
+  .tituloEtapa {
     color: #14203a;
     font-weight: bold;
     font-size: 35px;
   }
-  .etapa{
+
+  .etapa {
     color: #3768ff;
     font-weight: bold;
   }
 }
 
-.botoes{
+.botoes {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   width: 100%;
   align-items: center;
+  flex-wrap: wrap;
+  gap: 15px;
 
-  .voltar{
+  .voltar {
     background-color: transparent;
     border: #dde4f0 2px solid;
     box-shadow: 0 5px 10px rgb(201 211 229);
@@ -895,13 +955,13 @@ header {
 
   }
 
-  .voltar:active{
+  .voltar:active {
     transform: scale(0.95);
 
   }
 }
 
-.divDireita{
+.divDireita {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -909,7 +969,7 @@ header {
   gap: 20px;
 }
 
-.cardOrcamento{
+.cardOrcamento {
   background-color: #17233d;
   width: 100%;
   min-height: 200px;
@@ -920,18 +980,19 @@ header {
   padding: 20px;
   box-shadow: 0 5px 10px rgb(201 211 229);
 
-  .precoMontagem{
+  .precoMontagem {
     font-weight: bold;
     color: #ffffff;
     font-size: 30px;
   }
-  .orcamento{
+
+  .orcamento {
     font-weight: bold;
     color: #ffffff;
   }
 }
 
-.cardCompatibilidade{
+.cardCompatibilidade {
   background-color: #ffffff;
   border: #dde4f0 1px solid;
   width: 100%;
@@ -943,14 +1004,14 @@ header {
   padding: 20px;
   box-shadow: 0 5px 10px rgb(201 211 229);
 
-  .compatibilidade{
+  .compatibilidade {
     font-weight: bold;
     color: #17233d;
     font-size: 20px;
   }
 }
 
-.cardPecasEscolhidas{
+.cardPecasEscolhidas {
   background-color: #ffffff;
   border: #dde4f0 1px solid;
   width: 100%;
@@ -962,7 +1023,7 @@ header {
   padding: 20px;
   box-shadow: 0 5px 10px rgb(201 211 229);
 
-  .pecasEscolhidas{
+  .pecasEscolhidas {
     font-weight: bold;
     color: #17233d;
     font-size: 20px;
@@ -971,7 +1032,7 @@ header {
 
 /* SECÃO COMPONENTES*/
 
-.secaoComponente{
+.secaoComponente {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   justify-items: center;
@@ -981,7 +1042,7 @@ header {
   width: 100%;
 }
 
-form{
+form {
   display: flex;
   flex-direction: row;
   gap: 20px;
@@ -994,13 +1055,13 @@ form{
   align-items: center;
   justify-content: flex-start;
 
-  input{
+  input {
     width: 100%;
     padding: 10px;
     border: none;
   }
 
-  .botaoPesquisar{
+  .botaoPesquisar {
     padding: 10px;
     border: none;
     border-radius: 30px;
@@ -1008,14 +1069,15 @@ form{
     background-color: transparent;
     transition: transform 300ms ease, box-shadow 300ms ease, background-color 300ms ease, border-color 300ms ease;
   }
-  .botaoPesquisar:hover{
+
+  .botaoPesquisar:hover {
     box-shadow: 1px 1px 2px #dde4f0;
     background-color: transparent;
     transform: translateX(6px);
   }
 }
 
-.botoesCategoria{
+.botoesCategoria {
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
@@ -1024,7 +1086,7 @@ form{
   width: 100%;
 }
 
-.secaoCategoria{
+.secaoCategoria {
   display: flex;
   flex-direction: column;
   min-height: calc(100vh - 50px);
@@ -1033,13 +1095,13 @@ form{
   gap: 40px;
 }
 
-.categoria{
+.categoria {
   display: grid;
   grid-template-columns: 300px 1fr;
   gap: 30px;
 }
 
-.controlaCards{
+.controlaCards {
   display: flex;
   flex-direction: row;
   gap: 20px;
@@ -1051,7 +1113,7 @@ form{
   padding: 0 50px;
 }
 
-.card{
+.card {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -1065,11 +1127,13 @@ form{
   box-shadow: 0 5px 10px rgb(201 211 229);
   cursor: pointer;
 }
-.card:hover{
+
+.card:hover {
   transform: scale(0.95);
   border: #17233d 2px solid;
 }
-.tituloLinha{
+
+.tituloLinha {
   position: relative;
   padding-bottom: 10px;
   color: #526079;
@@ -1079,7 +1143,7 @@ form{
   font-weight: bold;
 }
 
-.tituloLinha::before{
+.tituloLinha::before {
   position: absolute;
   content: "";
   width: 100%;
@@ -1090,7 +1154,7 @@ form{
   border-radius: 10px;
 }
 
-.informacaoComp{
+.informacaoComp {
   font-weight: bold;
   color: #17233d;
   font-size: 15px;
@@ -1099,13 +1163,13 @@ form{
   padding: 5px;
 }
 
-.tituloCom{
+.tituloCom {
   font-size: 25px;
   font-weight: bold;
   color: #14203a;
 }
 
-.cardMontar{
+.cardMontar {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -1114,12 +1178,44 @@ form{
   border-radius: 15px;
   padding: 10px;
   gap: 10px;
-  p{
+
+  p {
     color: #f7f9fc;
   }
 }
+.finalizarMontagem{
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+  align-items: center;
+  background-color: #3768ff;
+  border: none;
+  border-radius: 15px;
+  padding: 20px 50px;
+  color: #ffffff;
+  transition: transform 300ms ease, box-shadow 300ms ease;
+  box-shadow: 0 5px 10px rgb(201 211 229);
+  text-decoration: none;
+  cursor: pointer;
+}
 
-.montagem3{
+.continuarMontagem {
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+  align-items: center;
+  background-color: #3768ff;
+  border: none;
+  border-radius: 15px;
+  padding: 15px 30px;
+  color: #ffffff;
+  transition: transform 300ms ease, box-shadow 300ms ease;
+  box-shadow: 0 5px 10px rgb(201 211 229);
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.montagem3 {
   background-color: transparent;
   border: #ffffff 1px solid;
   color: #ffffff;
@@ -1133,13 +1229,13 @@ form{
   transition: 300ms ease, background-color 300ms ease, border-color 300ms ease;
 }
 
-.montagem3:hover{
+.montagem3:hover {
   transform: scale(1.02);
 }
 
 /* SEÇÃO SOBRE*/
 
-.secaoSobre{
+.secaoSobre {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   justify-items: center;
@@ -1149,23 +1245,23 @@ form{
   min-height: calc(100vh - 90px);
 }
 
-.descricao2{
+.descricao2 {
   font-weight: bold;
   color: #526079;
   font-size: 15px;
 }
 
-.secaoMissao{
+.secaoMissao {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content:flex-start;
+  justify-content: flex-start;
   padding: 80px 6%;
   width: 100%;
 
 }
 
-.controlaCards2{
+.controlaCards2 {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -1175,7 +1271,7 @@ form{
   padding: 60px;
 }
 
-.card1{
+.card1 {
   background-color: #e7edff;
   width: 30%;
   min-height: 150px;
@@ -1189,7 +1285,7 @@ form{
 
 }
 
-.card2{
+.card2 {
   background-color: #dde4f0;
   width: 30%;
   min-height: 150px;
@@ -1202,7 +1298,7 @@ form{
   transition: transform 300ms ease, box-shadow 300ms ease, border 100ms ease;
 }
 
-.card3{
+.card3 {
   background-color: #fff2d8;
   width: 30%;
   min-height: 150px;
@@ -1215,16 +1311,16 @@ form{
   transition: transform 300ms ease, box-shadow 300ms ease, border 100ms ease;
 }
 
-.secaoControle{
+.secaoControle {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content:flex-start;
+  justify-content: flex-start;
   width: 100%;
   padding: 70px 6% 100px;
 }
 
-.iconeL{
+.iconeL {
   background-color: #e7edff;
   width: 15%;
   padding: 10px;
@@ -1235,7 +1331,7 @@ form{
   box-shadow: 1px 1px 2px #dde4f0;
 }
 
-.iconeP{
+.iconeP {
   background-color: #ddf8ef;
   width: 15%;
   padding: 10px;
@@ -1246,7 +1342,7 @@ form{
   box-shadow: 1px 1px 2px #dde4f0;
 }
 
-.iconeB{
+.iconeB {
   background-color: #fff2d8;
   width: 15%;
   padding: 10px;
@@ -1257,7 +1353,7 @@ form{
   box-shadow: 1px 1px 2px #dde4f0;
 }
 
-.secaoPrincipios{
+.secaoPrincipios {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   justify-items: flex-end;
@@ -1269,8 +1365,8 @@ form{
   gap: 40px;
 }
 
-.controlaCards3{
- display: grid;
+.controlaCards3 {
+  display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 40px;
   width: 100%;
@@ -1280,7 +1376,7 @@ form{
   background-color: #17233d;
 }
 
-.cardPrincipios{
+.cardPrincipios {
   display: flex;
   width: 100%;
   gap: 20px;
@@ -1294,12 +1390,13 @@ form{
   transition: transform 300ms ease, box-shadow 300ms ease, border 400ms ease;
   box-shadow: 0 5px 10px rgb(211 211 255 / 0.25);
 }
-.cardPrincipios:hover{
+
+.cardPrincipios:hover {
   border: #ffffff 2px solid;
   box-shadow: 0 5px 10px rgb(211 211 255 / 0.25);
 }
 
-.tituloPrincipal3{
+.tituloPrincipal3 {
   color: #ffffff;
   font-size: 25px;
   font-weight: bold;
@@ -1308,13 +1405,13 @@ form{
   gap: 5px;
 }
 
-.descricao3{
+.descricao3 {
   font-weight: bold;
   color: #b8c3d7;
   font-size: 20px;
 }
 
-.num{
+.num {
   font-weight: bold;
   color: #b8c3d7;
   font-size: 15px;
@@ -1322,16 +1419,16 @@ form{
   padding: 20px;
   display: flex;
   align-items: center;
- border-radius: 12px;
+  border-radius: 12px;
 }
 
-.tituloHero2{
+.tituloHero2 {
   font-size: 70px;
   font-weight: bold;
   color: #ffffff;
 }
 
-.informacao2{
+.informacao2 {
   color: #9A5A00;
   background-color: #fff2d8;
   max-width: 280px;
@@ -1344,13 +1441,14 @@ form{
   font-weight: bold;
   border-radius: 999px;
 }
-.iconPlaneta{
+
+.iconPlaneta {
   width: 300px;
   height: auto;
   display: block;
 }
 
-.secaoCompromisso{
+.secaoCompromisso {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   justify-items: center;
@@ -1363,6 +1461,7 @@ form{
   color: white;
   padding: 50px 30px 20px;
 }
+
 .footer-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
@@ -1370,17 +1469,29 @@ form{
   max-width: 1100px;
   margin: 0 auto 30px;
 }
+
 .footer-col .footer-logo {
-  font-size: 1.2rem; font-weight: 800;
-  color: #a855f7; margin-bottom: 10px;
+  font-size: 1.2rem;
+  font-weight: 800;
+  color: #a855f7;
+  margin-bottom: 10px;
 }
-.footer-col p { color: #94a3b8; font-size: 0.85rem; line-height: 1.6; margin-bottom: 14px; }
+
+.footer-col p {
+  color: #94a3b8;
+  font-size: 0.85rem;
+  line-height: 1.6;
+  margin-bottom: 14px;
+}
+
 .footer-col h4 {
-  color: white; font-size: 0.9rem;
+  color: white;
+  font-size: 0.9rem;
   margin-bottom: 14px;
   text-transform: uppercase;
   letter-spacing: 1px;
 }
+
 .footer-col a {
   display: block;
   color: #94a3b8;
@@ -1389,14 +1500,20 @@ form{
   font-size: 0.85rem;
   transition: color 0.15s;
 }
-.footer-col a:hover { color: #a855f7; }
+
+.footer-col a:hover {
+  color: #a855f7;
+}
+
 .footer-redes {
   display: flex;
   gap: 10px;
   margin-top: 6px;
 }
+
 .footer-redes a {
-  width: 38px; height: 38px;
+  width: 38px;
+  height: 38px;
   background: #1e293b;
   border-radius: 50%;
   display: flex !important;
@@ -1406,10 +1523,12 @@ form{
   transition: 0.2s;
   padding: 0 !important;
 }
+
 .footer-redes a:hover {
   background: #a855f7;
   transform: translateY(-3px);
 }
+
 .footer-copy {
   max-width: 1100px;
   margin: 0 auto;
@@ -1472,7 +1591,7 @@ form{
   transition: width 0.35s ease;
 }
 
-.controlaPecas{
+.controlaPecas {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -1481,7 +1600,7 @@ form{
   gap: 50px;
 }
 
-.porcentagemPecas{
+.porcentagemPecas {
   font-weight: bold;
   color: #22c55e;
 }
@@ -1497,4 +1616,580 @@ form{
   visibility: visible;
   opacity: 1;
 }
+
+.botaoAjuda {
+  padding: 5px 20px;
+  border-radius: 12px;
+  border: 1px solid #1e293b;
+}
+
+.ajuda {
+  display: none;
+}
+
+.ajudaAberta {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 14px;
+  right: 12px;
+
+  background-color: #f0f0f0;
+  border-radius: 15px;
+  padding: 12px;
+
+  gap: 10px;
+  width: clamp(260px, 40%, 360px);
+  max-width: 360px;
+  min-height: 360px;
+  box-sizing: border-box;
+  box-shadow: 0 8px 20px 0 rgba(0, 0, 0, 0.18);
+
+  h2{
+    text-align: center;
+    color: #01133a;
+    font-weight: bold;
+    font-size: 28px;
+    margin: 5px;
+  }
+
+  h3{
+    color: #17233d;
+    font-size: 20px;
+    margin: 2px;
+  }
+
+  p{
+    color: #526079;
+    font-size: 16px;
+    margin: 2px;
+  }
+
+  .botaoFechar{
+    padding: 12px 50px;
+    border-radius: 12px;
+    border: none;
+    color: #f7f9fc;
+    background-color: #3768ff;
+    cursor: pointer;
+    transition: background-color 0.35s ease;
+    align-self: center;
+  }
+  .botaoFechar:hover {
+    background-color: #2451dc;
+  }
+  animation: aparecerModal 0.5s ease-out;
+}
+
+
+@keyframes aparecerModal {
+  from {
+    opacity: 0;
+    transform: translateY(8px) scale(0.98);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+
+
+
+.controlaBotao {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (max-width: 600px) {
+  .ajudaAberta {
+    left: 12px;
+    right: 12px;
+    width: auto;
+    max-width: none;
+  }
+}
+
+
+.tutorial {
+  display: none;
+  position: fixed;
+  inset: 0;
+  z-index: 1002;
+
+  background-color: transparent;
+
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.tutorialCaixa {
+  width: 100%;
+  max-width: 460px;
+  padding: 28px;
+  z-index: 1;
+
+  background-color: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.4);
+
+  box-sizing: border-box;
+
+  h2 {
+    color: #01133a;
+    font-size: 26px;
+    margin: 12px 0;
+  }
+
+  p {
+    color: #526079;
+    line-height: 1.6;
+  }
+  transition: transform 0.25s ease;
+}
+
+.tutorialBotoes {
+  display: flex;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 24px;
+}
+
+.tutorialBotoes button {
+  padding: 11px 16px;
+  border-radius: 10px;
+  border: 1px solid #dde4f0;
+  background-color: #ffffff;
+  color: #01133a;
+  cursor: pointer;
+}
+
+#avancarTutorial {
+  background-color: #3768ff;
+  color: #ffffff;
+  border-color: #3768ff;
+}
+
+@keyframes entradaTutorial {
+  from {
+    opacity: 0;
+    transform: translateY(12px) scale(0.98);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+.tutorialAtivo {
+  display: flex;
+}
+.tutorialAtivo .tutorialCaixa {
+  animation: entradaTutorial 0.25s ease-out;
+}
+
+.destaqueTutorial {
+  position: relative;
+  z-index: 1001;
+
+  outline: 3px solid #3768ff;
+  outline-offset: 5px;
+  border-radius: 12px;
+
+  box-shadow:
+    0 0 0 4px rgba(55, 104, 255, 0.2),
+    0 0 0 100vmax rgba(1, 19, 58, 0.65);
+
+  transition: outline 0.2s ease, box-shadow 0.2s ease;
+}
+
+
+.tutorialCaixa.tutorialComponentes {
+  transform: translateY(-350px);
+}
+
+.statusConsumoInsuficiente{
+  background-color: #FEE2E2;
+  color: #991B1B;
+  border-radius: 12px;
+  padding: 16px;
+  font-weight: bold;
+}
+
+.statusConsumoSuficiente{
+  background-color: #E6F4EA;
+  color: #0F5132;
+  border-radius: 12px;
+  padding: 16px;
+  font-weight: bold;
+}
+
+/* Responsividade da página Montagem */
+@media (max-width: 900px) {
+  .montarPC {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    width: 100%;
+    min-width: 0;
+    padding: 0 16px;
+    gap: 20px;
+    box-sizing: border-box;
+  }
+
+  .montarPC > .divEsquerda,
+  .montarPC > .divMeio,
+  .montarPC > .divDireita {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    min-width: 0;
+    max-width: 100%;
+    box-sizing: border-box;
+  }
+
+  .botoes {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+    align-items: center;
+    gap: 5px;
+
+  }
+
+  .botoes .voltar {
+    padding: 5px 75px;
+
+  }
+
+  .botoes .finalizarMontagem {
+    padding: 18px 40px;
+  }
+
+  .botoes .continuarMontagem {
+    padding: 12px 22px;
+  }
+
+  .cardComponente {
+    width: 100%;
+    max-width: 100%;
+    padding: 16px;
+    box-sizing: border-box;
+  }
+  .textoMontagem {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 20px;
+  }
+
+  .tituloMontagem {
+    font-size: clamp(2rem, 7vw, 3rem);
+  }
+}
+
+@media (max-width: 600px) {
+  .cardComponente {
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
+    padding: 16px;
+    box-sizing: border-box;
+  }
+
+  .controlaElementos {
+    min-width: 0;
+    max-width: 100%;
+    box-sizing: border-box;
+  }
+
+  .areaPreco {
+    min-width: 0;
+    max-width: 100%;
+  }
+
+  .nomeComponente,
+  .descricao {
+    overflow-wrap: anywhere;
+  }
+}
+
+
+/* Ajustes dos cards de Componentes em telas pequenas */
+@media (max-width: 600px) {
+  .categoria {
+    grid-template-columns: minmax(0, 1fr);
+    width: 100%;
+    min-width: 0;
+  }
+
+  .categoria > .divEsquerda,
+  .categoria > .divDireita {
+    width: 100%;
+    min-width: 0;
+    max-width: 100%;
+  }
+
+  .controlaCards {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+    gap: 16px;
+    width: 100%;
+    min-width: 0;
+    min-height: 0;
+    padding: 0;
+    align-items: stretch;
+    box-sizing: border-box;
+  }
+
+  .controlaCards .card {
+    width: 100%;
+    min-width: 0;
+    max-width: 100%;
+    height: auto;
+    min-height: 0;
+    box-sizing: border-box;
+  }
+
+  .controlaCards .card * {
+    max-width: 100%;
+    overflow-wrap: anywhere;
+  }
+}
+
+/* Responsividade da página Componentes */
+@media (max-width: 600px) {
+  .secaoComponente {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 24px;
+    width: 100%;
+    padding: 30px 20px;
+    box-sizing: border-box;
+  }
+
+  .secaoComponente .cardPrincipal,
+  .secaoComponente .cardSecundario {
+    width: 100%;
+    min-width: 0;
+  }
+
+  .secaoComponente .tituloHero {
+    font-size: clamp(2rem, 8vw, 2.8rem);
+    overflow-wrap: anywhere;
+  }
+
+  .secaoComponente .background-image {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+  }
+
+  .secaoComponente form {
+    width: 100%;
+    min-width: 0;
+    gap: 10px;
+    padding: 12px;
+    box-sizing: border-box;
+  }
+
+  .secaoComponente form input {
+    flex: 1;
+    min-width: 0;
+  }
+}
+
+@media (max-width: 600px) {
+  .botoesCategoria {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 10px;
+    width: 100%;
+    min-width: 0;
+  }
+
+  .botoesCategoria button {
+    max-width: 100%;
+    white-space: normal;
+    overflow-wrap: anywhere;
+  }
+
+  .secaoCategoria {
+    width: 100%;
+    min-width: 0;
+    padding: 10px 20px;
+    gap: 24px;
+    box-sizing: border-box;
+  }
+}
+
+
+@media (max-width: 600px) {
+  .controlaCards2 {
+    flex-direction: column;
+    padding: 30px 0;
+    gap: 16px;
+  }
+
+  .card1,
+  .card2,
+  .card3,
+  .cardInformacao {
+    width: 100%;
+  }
+}
+
+@media (max-width: 600px) {
+  .secaoSobre,
+  .secaoPrincipios,
+  .secaoCompromisso {
+    grid-template-columns: 1fr;
+    justify-items: center;
+    gap: 30px;
+    padding: 40px 20px;
+  }
+
+  .secaoSobre .cardPrincipal,
+  .secaoSobre .cardSecundario,
+  .secaoPrincipios .cardPrincipal,
+  .secaoPrincipios .cardSecundario,
+  .secaoCompromisso .cardPrincipal,
+  .secaoCompromisso .cardSecundario {
+    width: 100%;
+    min-width: 0;
+  }
+
+  .secaoSobre .background-image,
+  .secaoCompromisso .background-image {
+    display: block;
+    width: 100%;
+    max-width: 420px;
+    height: auto;
+    margin: 0 auto;
+  }
+
+  .secaoPrincipios .iconPlaneta {
+    display: block;
+    width: 100%;
+    max-width: 280px;
+    height: auto;
+    margin: 0 auto;
+  }
+
+  .tituloHero,
+  .tituloHero2 {
+    font-size: clamp(32px, 8vw, 44px);
+  }
+
+  .controlaCards3 {
+    grid-template-columns: 1fr;
+    gap: 16px;
+    padding: 30px 20px;
+  }
+
+  .cardPrincipios {
+    min-height: auto;
+    padding: 18px;
+    gap: 14px;
+  }
+
+  .tituloPrincipal3 {
+    font-size: 20px;
+  }
+
+  .descricao3 {
+    font-size: 15px;
+    line-height: 1.5;
+  }
+
+  .num {
+    padding: 12px;
+    flex-shrink: 0;
+  }
+
+}
+
+
+@media (min-width: 601px) and (max-width: 900px) {
+  .controlaCards {
+    padding: 0;
+    gap: 2px;
+    align-items: stretch;
+  }
+
+
+  .controlaCards .card {
+    width: calc(50% - 1px);
+    box-sizing: border-box;
+    min-width: 0;
+  }
+
+
+  .controlaCards .card * {
+    max-width: 100%;
+    overflow-wrap: anywhere;
+  }
+
+  .divEsquerda{
+    max-height: 700px;
+    min-height: 660px;
+  }
+
+  .secaoComponente {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 14px;
+    width: 100%;
+    padding: 10px 10px;
+    box-sizing: border-box;
+  }
+
+
+
+  .secaoComponente .background-image {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+  }
+
+  .secaoComponente form {
+    width: 100%;
+    min-width: 0;
+    gap: 10px;
+    padding: 12px;
+    box-sizing: border-box;
+  }
+
+  .secaoComponente form input {
+    flex: 1;
+    min-width: 0;
+  }
+}
+
+.controlaCards2 {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  align-items: stretch;
+  gap: 16px;
+}
+
+.controlaCards2 .cardInformacao,
+.controlaCards2 .card1,
+.controlaCards2 .card2,
+.controlaCards2 .card3 {
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+}
+
 
