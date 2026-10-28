@@ -1,0 +1,419 @@
+[
+  {
+    "nome": "Intel Core i5-14400",
+    "categoria": "cpu",
+    "preco": 400,
+    "socket": "lga1700",
+    "consumo": 148,
+    "descricao": "Socket (LGA1700) • Raptor Lake Refresh • 10 núcleos (6 P-cores + 4 E-cores) e 16 threads • 2.5 GHz a 4.7 GHz",
+    "pontuacao": {
+      "jogos": 70,
+      "estudos": 90,
+      "trabalho": 90
+    },
+    "objetivos": [
+      "jogos",
+      "estudos",
+      "trabalho"
+    ],
+    "ajuda": {
+      "funcao": "Executa instruções e cálculos necessários para o sistema operacional e os programas funcionarem.",
+      "oQueObservar": "Precisa de uma placa-mãe com encaixe LGA1700. A memória pode ser DDR4 ou DDR5, mas isso depende do modelo da placa-mãe; os dois tipos não são intercambiáveis.",
+      "dicas": "É uma opção para jogos, estudos e multitarefas. Sua potência básica é de 65 W, mas pode chegar a cerca de 148 W em turbo. Confira se a versão comprada acompanha cooler e se a placa-mãe tem BIOS compatível."
+    }
+  },
+  {
+    "nome": "AMD Ryzen 5 3600",
+    "categoria": "cpu",
+    "preco": 550,
+    "socket": "am4",
+    "consumo": 65,
+    "descricao": "6 núcleos e 12 threads • Socket(AM4) • 3.5 GHz • Zen 2",
+    "pontuacao": {
+      "jogos": 60,
+      "estudos": 70,
+      "trabalho": 70
+    },
+    "objetivos": [
+      "jogos",
+      "estudos",
+      "trabalho"
+    ],
+    "ajuda": {
+      "funcao": "Executa instruções e cálculos necessários para os programas funcionarem.",
+      "oQueObservar": "Precisa de uma placa-mãe com encaixe AM4 e memória DDR4. Antes da compra, confira se a placa-mãe oferece suporte ao processador.",
+      "dicas": "É uma opção para tarefas do dia a dia, estudos e jogos. Confira se a versão comprada acompanha o cooler Wraith Stealth."
+    }
+  },
+  {
+    "nome": "AMD Ryzen 5 5600",
+    "categoria": "cpu",
+    "preco": 850,
+    "socket": "am4",
+    "consumo": 65,
+    "descricao": "6 núcleos e 12 threads • Socket AM4 • 3.5 GHz • Zen 3",
+    "pontuacao": {
+      "jogos": 70,
+      "estudos": 80,
+      "trabalho": 80
+    },
+    "objetivos": [
+      "jogos",
+      "estudos",
+      "trabalho"
+    ],
+    "ajuda": {
+      "funcao": "Executa instruções e cálculos necessários para o sistema operacional e os programas funcionarem.",
+      "oQueObservar": "Precisa de uma placa-mãe com encaixe AM4 e memória DDR4. O consumo nominal é de 65 W; confira também se a placa-mãe tem BIOS compatível.",
+      "dicas": "É uma opção para jogos e multitarefas. Confira se a versão comprada acompanha cooler; se usar um cooler de fábrica, evite configurações que aumentem muito o consumo e a temperatura."
+    }
+  },
+  {
+    "nome": "RX 6600 8 GB",
+    "categoria": "gpu",
+    "preco": 1200,
+    "consumo": 132,
+    "potencia": 0,
+    "descricao": "8 GB de VRAM • Arquitetura RDNA 2",
+    "pontuacao": {
+      "jogos": 80,
+      "estudos": 70,
+      "trabalho": 65
+    },
+    "objetivos": [
+      "jogos",
+      "trabalho"
+    ],
+    "ajuda": {
+      "funcao": "A placa de vídeo gera as imagens exibidas na tela e ajuda a executar jogos e programas que trabalham com gráficos.",
+      "oQueObservar": "Tem 8 GB de VRAM, a memória própria da placa de vídeo, e usa uma conexão PCIe 4.0 x8 para se comunicar com o computador. O consumo de referência é de cerca de 132 W.",
+      "dicas": "É uma opção para jogar em Full HD (1080p). Antes de comprar, confira se a fonte tem potência e conectores suficientes e se a placa cabe no gabinete."
+    }
+  },
+  {
+    "nome": "AMD Radeon RX 7600 8 GB",
+    "categoria": "gpu",
+    "preco": 1800,
+    "consumo": 165,
+    "descricao": "8 GB VRAM GDDR6 • PCIe 4.0 • Focada em jogos em Full HD",
+    "pontuacao": {
+      "jogos": 90,
+      "estudos": 75,
+      "trabalho": 80
+    },
+    "objetivos": [
+      "jogos",
+      "trabalho"
+    ],
+    "ajuda": {
+      "funcao": "A placa de vídeo gera as imagens exibidas na tela e ajuda a executar jogos e programas gráficos.",
+      "oQueObservar": "Tem 8 GB de VRAM, a memória própria da placa de vídeo. Seu consumo de referência é de cerca de 165 W; confira também o espaço disponível no gabinete e os conectores necessários.",
+      "dicas": "É voltada principalmente para jogos em Full HD (1080p). Confira os requisitos de alimentação do modelo escolhido e se a fonte consegue atendê-los."
+    }
+  },
+  {
+    "nome": "NVIDIA GeForce RTX 4060 Ti 8 GB",
+    "categoria": "gpu",
+    "preco": 2500,
+    "consumo": 165,
+    "descricao": "8 GB VRAM GDDR6 • PCIe 4.0 • DLSS 3 e Ray Tracing",
+    "pontuacao": {
+      "jogos": 90,
+      "estudos": 75,
+      "trabalho": 85
+    },
+    "objetivos": [
+      "jogos",
+      "trabalho"
+    ],
+    "ajuda": {
+      "funcao": "A placa de vídeo gera as imagens exibidas na tela e ajuda a executar jogos e programas gráficos.",
+      "oQueObservar": "Tem 8 GB de VRAM, a memória própria da placa de vídeo. Inclui recursos como DLSS, que pode melhorar o desempenho em jogos compatíveis, e Ray Tracing, que simula efeitos de iluminação.",
+      "dicas": "Pode ser uma opção para jogos e programas gráficos compatíveis. O desempenho varia conforme o jogo e as configurações. Confira os requisitos de alimentação e o tamanho do modelo antes de comprar."
+    }
+  },
+  {
+    "nome": "ASUS Prime H610M-E D4",
+    "categoria": "placaMae",
+    "preco": 550,
+    "socket": "lga1700",
+    "consumo": 20,
+    "descricao": "Chipset H610 • Socket (LGA) • Formato Micro-ATX • Suporte a memórias DDR4",
+    "objetivos": [
+      "estudos",
+      "trabalho",
+      "jogos"
+    ],
+    "ajuda": {
+      "funcao": "Conecta os componentes do computador e permite que eles se comuniquem.",
+      "oQueObservar": "Usa o encaixe LGA1700 e memória DDR4. É voltada para processadores Intel compatíveis, mas o suporte à geração do processador depende também da versão da BIOS.",
+      "dicas": "Pode combinar com o Core i5-14400 se a BIOS oferecer suporte ao processador. Confirme esse detalhe com a loja antes de comprar. Esta placa usa DDR4; memória DDR5 não serve nela."
+    }
+  },
+  {
+    "nome": "ASUS Prime A520M-K",
+    "categoria": "placaMae",
+    "preco": 450,
+    "socket": "am4",
+    "consumo": 15,
+    "descricao": "Chipset A520 • Socket • (AM4) • Formato Micro-ATX • Suporte a memórias DDR4",
+    "objetivos": [
+      "estudos",
+      "trabalho",
+      "jogos"
+    ],
+    "ajuda": {
+      "funcao": "Conecta os componentes do computador e permite que eles se comuniquem.",
+      "oQueObservar": "Usa o encaixe AM4 e memória DDR4. É uma placa de entrada e tem recursos de ajuste e expansão mais limitados que modelos mais avançados.",
+      "dicas": "Pode combinar com o Ryzen 5 3600, desde que a versão da BIOS ofereça suporte. Confira essa informação com a loja antes de comprar."
+    }
+  },
+  {
+    "nome": "Gigabyte B450M DS3H",
+    "categoria": "placaMae",
+    "preco": 500,
+    "socket": "am4",
+    "consumo": 25,
+    "descricao": "Chipset B450 • Socket (AM4) • Formato Micro-ATX • 4 Slots DDR4",
+    "objetivos": [
+      "jogos",
+      "estudos",
+      "trabalho"
+    ],
+    "ajuda": {
+      "funcao": "Conecta os componentes do computador e permite que eles se comuniquem.",
+      "oQueObservar": "Usa o encaixe AM4 e memória DDR4. Tem quatro slots de memória, o que oferece mais opções para aumentar a RAM depois.",
+      "dicas": "Pode oferecer opções de expansão para futuras melhorias. Se escolher um processador Ryzen da série 5000, confirme se a versão da BIOS da placa-mãe é compatível."
+    }
+  },
+  {
+    "nome": "Kingston Fury Beast 16 GB DDR4",
+    "categoria": "memoriaRAM",
+    "preco": 280,
+    "consumo": 4,
+    "descricao": "16 GB DDR4 • 3200 MHz",
+    "pontuacao": {
+      "jogos": 65,
+      "estudos": 75,
+      "trabalho": 70
+    },
+    "objetivos": [
+      "jogos",
+      "estudos",
+      "trabalho"
+    ],
+    "ajuda": {
+      "funcao": "A memória RAM guarda temporariamente os dados que os programas precisam acessar rapidamente enquanto estão em uso.",
+      "oQueObservar": "Este produto é um único pente de 16 GB DDR4 com frequência de 3200 MHz. Usado sozinho, normalmente funciona em Single Channel, ou seja, com um canal de comunicação de memória.",
+      "dicas": "Se a placa-mãe for compatível e o orçamento permitir, dois pentes adequados podem permitir o modo Dual Channel, que aumenta a largura de banda da memória. O ganho varia conforme o uso."
+    }
+  },
+  {
+    "nome": "Kingston Fury Beast 32 GB (2 × 16 GB) DDR4 3200 MHz",
+    "categoria": "memoriaRAM",
+    "preco": 450,
+    "consumo": 6,
+    "descricao": "Kit Dual Channel (2x 16 GB) • Frequência 3200 MHz • CL16",
+    "pontuacao": {
+      "jogos": 65,
+      "estudos": 76,
+      "trabalho": 70
+    },
+    "objetivos": [
+      "jogos",
+      "trabalho",
+      "estudos"
+    ],
+    "ajuda": {
+      "funcao": "A memória RAM guarda temporariamente os dados que os programas precisam acessar rapidamente enquanto estão em uso.",
+      "oQueObservar": "O kit tem dois pentes de 16 GB, totalizando 32 GB de memória DDR4. Confira se a placa-mãe aceita DDR4 e a frequência escolhida.",
+      "dicas": "Dois pentes compatíveis podem funcionar em Dual Channel, usando dois canais de memória para aumentar a largura de banda. Isso não dobra o desempenho geral do computador; o ganho depende do programa."
+    }
+  },
+  {
+    "nome": "Corsair Vengeance LPX 32 GB (2 × 16 GB) DDR4 3200 MHz",
+    "categoria": "memoriaRAM",
+    "preco": 500,
+    "consumo": 6,
+    "descricao": "Kit Dual Channel (2x 16 GB) • Perfil baixo • Frequência 3200 MHz",
+    "pontuacao": {
+      "jogos": 65,
+      "estudos": 76,
+      "trabalho": 70
+    },
+    "objetivos": [
+      "jogos",
+      "trabalho",
+      "estudos"
+    ],
+    "ajuda": {
+      "funcao": "A memória RAM guarda temporariamente os dados que os programas precisam acessar rapidamente enquanto estão em uso.",
+      "oQueObservar": "O kit tem dois pentes de 16 GB DDR4. O perfil baixo significa que os módulos são relativamente baixos e podem facilitar a instalação perto de coolers grandes.",
+      "dicas": "O perfil baixo pode ajudar em montagens com pouco espaço, mas não garante encaixe em todos os computadores. Confira o espaço disponível na placa-mãe e a compatibilidade com o cooler escolhido."
+    }
+  },
+  {
+    "nome": "Kingston NV2 1 TB",
+    "categoria": "armazenamento",
+    "preco": 450,
+    "consumo": 5,
+    "descricao": "SSD NVMe • 1 TB",
+    "pontuacao": {
+      "jogos": 70,
+      "estudos": 85,
+      "trabalho": 85
+    },
+    "objetivos": [
+      "jogos",
+      "estudos",
+      "trabalho"
+    ],
+    "ajuda": {
+      "funcao": "Armazena de forma permanente o sistema operacional, os jogos, os programas e os arquivos.",
+      "oQueObservar": "É um SSD M.2 NVMe de 1 TB. M.2 é o formato físico; NVMe é o protocolo de comunicação usado para transferir dados. Confira se a placa-mãe tem um slot compatível.",
+      "dicas": "Pode reduzir os tempos de inicialização e carregamento em comparação com um HD. Os tempos variam conforme o computador e o programa."
+    }
+  },
+  {
+    "nome": "Kingston A400 SSD SATA 480 GB",
+    "categoria": "armazenamento",
+    "preco": 250,
+    "consumo": 3,
+    "descricao": "SSD de 2.5 polegadas • Conexão SATA III • Velocidades até 500 MB/s",
+    "pontuacao": {
+      "jogos": 70,
+      "estudos": 85,
+      "trabalho": 85
+    },
+    "objetivos": [
+      "estudos",
+      "trabalho",
+      "jogos"
+    ],
+    "ajuda": {
+      "funcao": "Guarda arquivos, jogos e o sistema operacional de forma permanente.",
+      "oQueObservar": "É um SSD de 2,5 polegadas que usa a conexão SATA, normalmente ligada por cabos de dados e energia. É mais rápido em várias tarefas do que um HD mecânico comum.",
+      "dicas": "É uma opção para instalar o sistema e os programas com carregamentos mais rápidos do que em um HD. Se precisar de mais espaço, você pode combinar um SSD com um HD para guardar arquivos."
+    }
+  },
+  {
+    "nome": "Seagate Barracuda HDD 2 TB",
+    "categoria": "armazenamento",
+    "preco": 450,
+    "consumo": 6,
+    "descricao": "Disco Rígido Mecânico • 3.5 polegadas • 7200 RPM",
+    "pontuacao": {
+      "jogos": 40,
+      "estudos": 85,
+      "trabalho": 80
+    },
+    "objetivos": [
+      "trabalho",
+      "estudos"
+    ],
+    "ajuda": {
+      "funcao": "Guarda arquivos, jogos e o sistema operacional de forma permanente.",
+      "oQueObservar": "É um HD mecânico de 2 TB. Costuma oferecer bastante espaço por um preço menor, mas acessa os dados mais lentamente do que um SSD.",
+      "dicas": "É uma boa opção para guardar fotos, vídeos, documentos e cópias de segurança. Para iniciar o sistema e abrir programas mais rapidamente, considere usar também um SSD."
+    }
+  },
+  {
+    "nome": "MSI MAG A650BN",
+    "categoria": "fonte",
+    "preco": 390,
+    "potencia": 650,
+    "descricao": "650 W • Certificação 80 Plus Bronze",
+    "objetivos": [
+      "jogos",
+      "trabalho",
+      "estudos"
+    ],
+    "ajuda": {
+      "funcao": "A fonte transforma a energia da tomada em energia adequada para alimentar os componentes do computador.",
+      "oQueObservar": "Oferece potência nominal de 650 W e certificação 80 Plus Bronze, relacionada à eficiência energética. A potência necessária depende do conjunto de peças e dos conectores exigidos.",
+      "dicas": "Pode ser uma opção para montagens com placas de vídeo como a RTX 4060 Ti ou a RX 7600, dependendo do modelo e do restante do computador. Confira os requisitos de alimentação e os conectores da placa de vídeo."
+    }
+  },
+  {
+    "nome": "MSI MAG A550BN 550 W",
+    "categoria": "fonte",
+    "preco": 350,
+    "potencia": 550,
+    "descricao": "Potência de 550W • Certificação 80 Plus Bronze • Fonte de entrada confiável",
+    "objetivos": [
+      "jogos",
+      "estudos",
+      "trabalho"
+    ],
+    "ajuda": {
+      "funcao": "A fonte transforma a energia da tomada em energia adequada para alimentar os componentes do computador.",
+      "oQueObservar": "Oferece potência nominal de 550 W. A certificação 80 Plus Bronze indica um nível de eficiência energética, mas não determina sozinha a qualidade ou a compatibilidade da fonte.",
+      "dicas": "Pode atender a uma montagem com uma placa de vídeo como a RX 6600, dependendo do restante das peças. Confira a potência recomendada e os conectores necessários."
+    }
+  },
+  {
+    "nome": "Corsair CV550 550 W",
+    "categoria": "fonte",
+    "preco": 360,
+    "potencia": 550,
+    "descricao": "Potência de 550W • Certificação 80 Plus Bronze • Cabeamento Fixo Sleeve",
+    "objetivos": [
+      "jogos",
+      "estudos",
+      "trabalho"
+    ],
+    "ajuda": {
+      "funcao": "A fonte transforma a energia da tomada em energia adequada para alimentar os componentes do computador.",
+      "oQueObservar": "Oferece potência nominal de 550 W. Os cabos são fixos, ou seja, não podem ser removidos da fonte. Confira se há conectores suficientes para as peças escolhidas.",
+      "dicas": "Pode servir para montagens de entrada ou intermediárias, dependendo dos componentes. A organização dos cabos dentro do gabinete é chamada de cable management; deixe-os organizados sem bloquear a circulação de ar."
+    }
+  },
+  {
+    "nome": "Montech Air 100 ARGB",
+    "categoria": "gabinete",
+    "preco": 320,
+    "descricao": "Gabinete Micro-ATX • Lateral em vidro temperado • Painel frontal mesh • 4 ventoinhas ARGB inclusas",
+    "objetivos": [
+      "jogos",
+      "trabalho",
+      "estudos"
+    ],
+    "ajuda": {
+      "funcao": "O gabinete abriga e protege as peças e ajuda a organizar os componentes e a circulação de ar.",
+      "oQueObservar": "Aceita placas-mãe de até Micro-ATX. A frente em malha, chamada mesh, facilita a entrada de ar. Confira o comprimento da placa de vídeo e a altura do cooler antes de comprar.",
+      "dicas": "Este modelo inclui ventoinhas com iluminação ARGB, que permite controlar efeitos de luz quando há compatibilidade. Confira como a iluminação é conectada e controlada."
+    }
+  },
+  {
+    "nome": "Montech X3 Mesh",
+    "categoria": "gabinete",
+    "preco": 350,
+    "descricao": "Lateral em vidro temperado • Painel frontal em malha mesh • Ventoinhas inclusas",
+    "objetivos": [
+      "jogos",
+      "trabalho",
+      "estudos"
+    ],
+    "ajuda": {
+      "funcao": "O gabinete abriga e protege as peças e ajuda a organizar os componentes e a circulação de ar.",
+      "oQueObservar": "A frente em malha, chamada mesh, facilita a entrada de ar para ajudar a resfriar os componentes. Confira o tamanho da placa-mãe, da placa de vídeo e do cooler que pretende usar.",
+      "dicas": "Pode ser uma opção para quem quer ventoinhas incluídas. Confira a quantidade e o tipo de conexão das ventoinhas na versão vendida pela loja."
+    }
+  },
+  {
+    "nome": "Cooler Master MasterBox Q300L",
+    "categoria": "gabinete",
+    "preco": 300,
+    "descricao": "Formato compacto • Filtros de poeira magnéticos • Painel modular",
+    "objetivos": [
+      "estudos",
+      "trabalho",
+      "jogos"
+    ],
+    "ajuda": {
+      "funcao": "O gabinete abriga e protege as peças e ajuda a organizar os componentes do computador.",
+      "oQueObservar": "É um modelo compacto voltado para placas-mãe Micro-ATX e Mini-ITX. Confira o comprimento máximo da placa de vídeo e a altura máxima do cooler do processador.",
+      "dicas": "Pode ser uma boa opção para quem tem pouco espaço na mesa. Antes de comprar, confira as medidas das peças e se há espaço suficiente para a circulação de ar."
+    }
+  }
+]

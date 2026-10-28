@@ -54,14 +54,14 @@
 
 
     <div class="pecas">
-        <div class="controlaPecas">
-          <p class="descricaoPecas descricao">0 de 7 peças </p>
-          <p class="porcentagemPecas">0%</p>
-        </div>
+      <div class="controlaPecas">
+        <p class="descricaoPecas descricao">0 de 7 peças </p>
+        <p class="porcentagemPecas">0%</p>
+      </div>
 
-        <div class="barraProgresso">
-          <div class="progressoPreenchido"></div>
-        </div>
+      <div class="barraProgresso">
+        <div class="progressoPreenchido"></div>
+      </div>
 
 
     </div>
@@ -69,7 +69,53 @@
   </div>
 </section>
 
-<section class="montarPC">
+
+<section class="orientacaoInicial" id="orientacaoInicial">
+  <div class="cardOrientacao">
+    <p class="descricao">PC BUILDER · SUA MONTAGEM</p>
+
+    <h1>Vamos planejar seu PC?</h1>
+
+    <p>
+      Conte para nós o que você pretende fazer
+      e quanto deseja investir.
+    </p>
+
+    <form id="formOrientacao">
+      <label for="objetivoPC">
+        Qual será o objetivo do computador?
+      </label>
+
+      <select id="objetivoPC" name="objetivoPC" required>
+        <option value="">Selecione uma opção</option>
+        <option value="jogos">Jogos</option>
+        <option value="estudos">Estudos e programação</option>
+        <option value="trabalho">Trabalho profissional</option>
+      </select>
+
+      <label for="orcamentoPC">
+        Qual é o seu orçamento máximo?
+      </label>
+
+      <input
+        type="number"
+        id="orcamentoPC"
+        name="orcamentoPC"
+        min="1"
+        step="1"
+        placeholder="Ex.: 3500"
+        required
+      >
+
+      <button type="submit" id="confirmarOrientacao">
+        Começar montagem
+      </button>
+    </form>
+  </div>
+</section>
+
+
+<section class="montarPC" hidden>
 
   <div class="divEsquerda">
     <p class="descricao">SUA MONTAGEM</p>
@@ -149,8 +195,7 @@
     <div class="textoPrincipalMontagem">
       <p class="descricaoPecas descricao">ETAPA 1 DE 7</p>
       <h2 class="tituloEtapa">Escolha seu processador</h2>
-      <p class="descricaoComponente">Processador é como o cérebro humano, ele precisa executar todos os cálculos,
-        pensamentos e comandos do seu sistema.</p>
+      <p class="descricaoComponente">Escolha um processador adequado ao seu orçamento e ao uso que pretende dar ao PC. Confira a compatibilidade com a placa-mãe.</p>
     </div>
 
     <div class="divSugestao">
@@ -161,298 +206,35 @@
 
     <div class="divComponentes">
 
-      <div class="cardComponente" data-categoria="placaMae" data-socket="am4">
-        <div class="controlaElementos">
-          <div class="iconComponente">
-            <img class="iconsCards" src="assets/icons/icon-PlacaMae.svg" alt="Ícone Placa-Mãe">
-          </div>
-          <div class="areaPreco">
-            <h2 class="nomeComponente">MSI B550M PRO-VDH WiFi</h2>
-            <p class="descricao">mATX • AM4 • DDR4 • Wi-Fi</p>
-            <p class="preco">R$ 829</p>
-          </div>
-        </div>
-      </div>
-
-      <div class="cardComponente" data-categoria="placaMae" data-socket="am4">
-        <div class="controlaElementos">
-          <div class="iconComponente">
-            <img class="iconsCards" src="assets/icons/icon-PlacaMae.svg" alt="Ícone Placa-Mãe">
-          </div>
-          <div class="areaPreco">
-            <h2 class="nomeComponente">Gigabyte B550M DS3H</h2>
-            <p class="descricao">mATX • AM4 • DDR4</p>
-            <p class="preco">R$ 699</p>
-          </div>
-        </div>
-
-
-      </div>
-
-      <div class="cardComponente" data-categoria="placaMae" data-socket="am4">
-
-        <div class="controlaElementos">
-          <div class="iconComponente">
-            <img class="iconsCards" src="assets/icons/icon-PlacaMae.svg" alt="Ícone Placa-Mãe">
-          </div>
-          <div class="areaPreco">
-            <h2 class="nomeComponente">ASUS TUF Gaming B550M-Plus</h2>
-            <p class="descricao">mATX • AM4 • DDR4</p>
-            <p class="preco">R$999</p>
-          </div>
-        </div>
-      </div>
-
-      <div class="cardComponente" data-categoria="cpu" data-socket="am4" data-consumo="65">
-        <div class="controlaElementos">
-          <div class="iconComponente">
-            <img class="iconsCards" src="assets/icons/icon-CPU.svg" alt="Ícone Processador">
-          </div>
-          <div class="areaPreco">
-            <h2 class="nomeComponente"> AMD Ryzen 5 5600</h2>
-            <p class="descricao"> 6 núcleos e 12 threads • Socket(AM4) • 3.5 GHz • Zen 3</p>
-            <p class="preco">R$ 750</p>
-          </div>
-        </div>
-      </div>
-
-      <div class="cardComponente" data-categoria="cpu" data-socket="lga1700" data-consumo="148">
-        <div class="controlaElementos">
-          <div class="iconComponente">
-            <img class="iconsCards" src="assets/icons/icon-CPU.svg" alt="Ícone Processador">
-          </div>
-          <div class="areaPreco">
-            <h2 class="nomeComponente"> Intel Core i5-13400F</h2>
-            <p class="descricao">10 núcleos e 16 threads • Socket(LGA) • 4.6 GHz</p>
-            <p class="preco">R$ 1000</p>
-          </div>
-        </div>
-      </div>
-
-      <div class="cardComponente" data-categoria="cpu" data-socket="am5" data-consumo="88">
-        <div class="controlaElementos">
-          <div class="iconComponente">
-            <img class="iconsCards" src="assets/icons/icon-CPU.svg" alt="Ícone Processador">
-          </div>
-          <div class="areaPreco">
-            <h2 class="nomeComponente">AMD Ryzen 5 7600</h2>
-            <p class="descricao"> 6 núcleos e 12 threads • Socket(AM5) • 5.1 GHz • Zen 4</p>
-            <p class="preco">R$ 980</p>
-          </div>
-        </div>
-      </div>
-
-
-      <div class="cardComponente" data-categoria="gpu" data-consumo="120">
-        <div class="controlaElementos">
-          <div class="iconComponente">
-            <img class="iconsCards" src="assets/icons/icon-PlacaVideo.svg" alt="Ícone Placa de Vídeo">
-          </div>
-          <div class="areaPreco">
-            <h2 class="nomeComponente">AMD Radeon RX 6600: XFX SWFT210 RX 6600</h2>
-            <p class="descricao">VRAM: 8GB GDDR6 • Consumo: 132W</p>
-            <p class="preco">R$ 1400</p>
-          </div>
-        </div>
-      </div>
-
-      <div class="cardComponente" data-categoria="gpu" data-consumo="165">
-        <div class="controlaElementos">
-          <div class="iconComponente">
-            <img class="iconsCards" src="assets/icons/icon-PlacaVideo.svg" alt="Ícone Placa de Vídeo">
-          </div>
-          <div class="areaPreco">
-            <h2 class="nomeComponente">AMD Radeon RX 7600</h2>
-            <p class="descricao">VRAM: 8GB GDDR6 • Consumo: 162W</p>
-            <p class="preco">R$ 1800</p>
-          </div>
-        </div>
-      </div>
-
-      <div class="cardComponente" data-categoria="gpu" data-consumo="115">
-        <div class="controlaElementos">
-          <div class="iconComponente">
-            <img class="iconsCards" src="assets/icons/icon-PlacaVideo.svg" alt="Ícone Placa de Vídeo">
-          </div>
-          <div class="areaPreco">
-            <h2 class="nomeComponente">NVIDIA GeForce RTX 4060</h2>
-            <p class="descricao">VRAM: 8GB GDDR6 • Consumo: 115W</p>
-            <p class="preco">R$ 1900</p>
-          </div>
-        </div>
-      </div>
-
-      <div class="cardComponente" data-categoria="memoriaRAM">
-        <div class="controlaElementos">
-          <div class="iconComponente">
-            <img class="iconsCards" src="assets/icons/icon-RAM.svg" alt="Ícone Memoria RAM">
-          </div>
-          <div class="areaPreco">
-            <h2 class="nomeComponente">Kingston FURY Beast DDR4:</h2>
-            <p class="descricao">8GB DDR4 • Frequencia: 2666 a 3200 MHz</p>
-            <p class="preco">R$ 159</p>
-          </div>
-        </div>
-      </div>
-
-      <div class="cardComponente" data-categoria="memoriaRAM">
-        <div class="controlaElementos">
-          <div class="iconComponente">
-            <img class="iconsCards" src="assets/icons/icon-RAM.svg" alt="Ícone Memoria RAM">
-          </div>
-          <div class="areaPreco">
-            <h2 class="nomeComponente">Corsair Vengeance RGB DDR5</h2>
-            <p class="descricao">32GB DDR5(Dois pentes de 16 GB) • Frequência: 5200 a 7200 MHz</p>
-            <p class="preco">R$ 1699</p>
-          </div>
-        </div>
-      </div>
-
-      <div class="cardComponente" data-categoria="memoriaRAM">
-        <div class="controlaElementos">
-          <div class="iconComponente">
-            <img class="iconsCards" src="assets/icons/icon-RAM.svg" alt="Ícone Memoria RAM">
-          </div>
-          <div class="areaPreco">
-            <h2 class="nomeComponente">G.Skill Trident Z5 Neo DDR5</h2>
-            <p class="descricao">64GB DDR5(Dois pentes de 32 GB) • Frequencia: 5600 a 6400 MHz</p>
-            <p class="preco">R$ 14114</p>
-          </div>
-        </div>
-      </div>
-
-
-      <div class="cardComponente" data-categoria="armazenamento">
-        <div class="controlaElementos">
-          <div class="iconComponente">
-            <img class="iconsCards" src="assets/icons/icon-Armaz.svg" alt="Ícone Armazenamento">
-          </div>
-          <div class="areaPreco">
-            <h2 class="nomeComponente">SSD NVMe M.2 (PCIe 4.0)</h2>
-            <p class="descricao">1TB • Leitura 3500MBS e Gravação 2100MBS</p>
-            <p class="preco">R$ 1329</p>
-          </div>
-        </div>
-      </div>
-
-
-      <div class="cardComponente" data-categoria="armazenamento">
-        <div class="controlaElementos">
-          <div class="iconComponente">
-            <img class="iconsCards" src="assets/icons/icon-Armaz.svg" alt="Ícone Armazenamento">
-          </div>
-          <div class="areaPreco">
-            <h2 class="nomeComponente">SSD SATA kingston 2.5 polegadas</h2>
-            <p class="descricao">480GB • Leitura 500MBS e Gravação 450MBS</p>
-            <p class="preco">R$ 647</p>
-          </div>
-        </div>
-      </div>
-
-      <div class="cardComponente" data-categoria="armazenamento">
-        <div class="controlaElementos">
-          <div class="iconComponente">
-            <img class="iconsCards" src="assets/icons/icon-Armaz.svg" alt="Ícone Armazenamento">
-          </div>
-          <div class="areaPreco">
-            <h2 class="nomeComponente">HD Seagate 2TB Barracuda</h2>
-            <p class="descricao">2TB • Velocidade de rotação: 7200RPM</p>
-            <p class="preco">R$ 814</p>
-          </div>
-        </div>
-      </div>
-
-      <div class="cardComponente" data-categoria="fonte" data-potencia="650">
-        <div class="controlaElementos">
-          <div class="iconComponente">
-            <img class="iconsCards" src="assets/icons/icon-Fonte.svg" alt="Ícone Fonte">
-          </div>
-          <div class="areaPreco">
-            <h2 class="nomeComponente">Corsair CX650 </h2>
-            <p class="descricao">(650W) • Certificação 80 Plus Bronze</p>
-            <p class="preco">R$ 460</p>
-          </div>
-        </div>
-      </div>
-
-
-      <div class="cardComponente" data-categoria="fonte" data-potencia="850">
-        <div class="controlaElementos">
-          <div class="iconComponente">
-            <img class="iconsCards" src="assets/icons/icon-Fonte.svg" alt="Ícone Fonte">
-          </div>
-          <div class="areaPreco">
-            <h2 class="nomeComponente">XPG Core Reactor </h2>
-            <p class="descricao">(850W) • Certificação 80 Plus Gold</p>
-            <p class="preco">R$ 900</p>
-          </div>
-        </div>
-      </div>
-
-      <div class="cardComponente" data-categoria="fonte" data-potencia="1000">
-        <div class="controlaElementos">
-          <div class="iconComponente">
-            <img class="iconsCards" src="assets/icons/icon-Fonte.svg" alt="Ícone Fonte">
-          </div>
-          <div class="areaPreco">
-            <h2 class="nomeComponente">Seasonic Prime TX-1000 </h2>
-            <p class="descricao">(1000W) • Certificação 80 Plus Titanium</p>
-            <p class="preco">R$ 1.800</p>
-          </div>
-        </div>
-      </div>
-
-      <div class="cardComponente" data-categoria="gabinete">
-        <div class="controlaElementos">
-          <div class="iconComponente">
-            <img class="iconsCards" src="assets/icons/icon-Gabinete.svg" alt="Ícone Gabinete">
-          </div>
-          <div class="areaPreco">
-            <h2 class="nomeComponente">Corsair 4000D Airflow </h2>
-            <p class="descricao">Um gabinete mid-tower focado em excelente resfriamento. Possui um painel frontal em
-              grade (mesh) que otimiza a entrada de ar, além de um ótimo espaço interno para organização de cabos.</p>
-            <p class="preco">R$ 580</p>
-          </div>
-        </div>
-      </div>
-
-      <div class="cardComponente" data-categoria="gabinete">
-        <div class="controlaElementos">
-          <div class="iconComponente">
-            <img class="iconsCards" src="assets/icons/icon-Gabinete.svg" alt="Ícone Gabinete">
-          </div>
-          <div class="areaPreco">
-            <h2 class="nomeComponente">Lian Li O11 Dynamic EVO </h2>
-            <p class="descricao">Gabinete estilo "aquário" com painéis de vidro temperado na frente e na lateral. É o
-              favorito de quem quer expor os componentes internos e montar sistemas complexos de refrigeração líquida
-              (Water Cooler personalizado).</p>
-            <p class="preco">R$ 1100</p>
-          </div>
-        </div>
-      </div>
-
-      <div class="cardComponente" data-categoria="gabinete">
-        <div class="controlaElementos">
-          <div class="iconComponente">
-            <img class="iconsCards" src="assets/icons/icon-Gabinete.svg" alt="Ícone Gabinete">
-          </div>
-          <div class="areaPreco">
-            <h2 class="nomeComponente">Pichau Apus Black </h2>
-            <p class="descricao">Uma opção nacional focada em custo-benefício. É compacto, possui lateral em vidro
-              temperado e frente em malha texturizada para garantir uma boa circulação de ar sem gastar muito.</p>
-            <p class="preco">R$ 250</p>
-          </div>
-        </div>
-      </div>
 
     </div>
+
+    <div class="ajuda">
+      <h2>Ajuda sobre o componente</h2>
+
+      <h3>Para que serve?</h3>
+      <p id="funcao"></p>
+
+      <h3>O que observar</h3>
+      <p id="oQueObservar"></p>
+
+      <h3>Dicas</h3>
+      <P id="dicas"></P>
+
+
+      <button class="botaoFechar">Fechar</button>
+
+
+    </div>
+
+
     <div class="botoes">
 
       <button class="voltar"><img class="icons" src="assets/icons/icon-Voltar.svg" alt="Ícone de Voltar">Voltar
       </button>
-      <button class="finalizarMontagem montagem">Finalizar Montagem</button>
-      <button class="continuarMontagem montagem">Continuar com esta <img class="icons"
-                                                                     src="assets/icons/icon-Avancar.svg">
+      <button class="finalizarMontagem">Finalizar Montagem</button>
+      <button class="continuarMontagem">Continuar com esta <img class="icons"
+                                                                         src="assets/icons/icon-Avancar.svg">
       </button>
     </div>
   </div>
@@ -460,15 +242,31 @@
 
   <div class="divDireita">
 
+
     <div class="cardOrcamento">
-      <p class="orcamento">Orçamento</p>
+      <p class="orcamento">Orçamento máximo</p>
+      <h2 class="orcamentoDefinido">R$ 0,00</h2>
+
+      <div class="progressoOrcamento">
+        <div class="progressoOrcamentoPreenchido"></div>
+      </div>
+
+      <p class="statusOrcamento">Informe seu orçamento para começar.</p>
+      <p class="orientacaoObjetivo"></p>
+
       <p class="nivelOrcamento"></p>
-      <h2 class="precoMontagem">R$ 0.000</h2>
+
+      <p class="descricaoTotal">Total da montagem</p>
+      <h2 class="precoMontagem">R$ 0,00</h2>
+
+
     </div>
+
 
     <div class="cardCompatibilidade">
       <h2 class="compatibilidade">Compatibilidade</h2>
       <p class="statusSocket"></p>
+      <p class="statusConsumo"></p>
       <p class="statusConsumo"></p>
     </div>
 
@@ -478,10 +276,10 @@
         <img class="icons" src="assets/icons/icon-CPU.svg" alt="Ícone Processador">
         <p><span class="resumoCpu"></span></p>
       </div>
-       <div class="controlaElementos itemResumo" data-categoria="placaMae">
-         <img class="icons" src="assets/icons/icon-PlacaMae.svg" alt="Ícone Placa-Mãe">
-         <p><span class="resumoPlacaMae"></span></p>
-       </div>
+      <div class="controlaElementos itemResumo" data-categoria="placaMae">
+        <img class="icons" src="assets/icons/icon-PlacaMae.svg" alt="Ícone Placa-Mãe">
+        <p><span class="resumoPlacaMae"></span></p>
+      </div>
       <div class="controlaElementos itemResumo" data-categoria="gpu">
         <img class="icons" src="assets/icons/icon-PlacaVideo.svg" alt="Ícone Placa de Vídeo">
         <p><span class="resumoGpu"></span></p>
@@ -504,10 +302,6 @@
       </div>
 
 
-
-
-
-
     </div>
 
     <div class="botaoFinalizar">
@@ -516,6 +310,100 @@
   </div>
 
 </section>
+
+
+<div class="tutorial" id="tutorial" role="dialog"
+     aria-modal="true" aria-labelledby="tituloTutorial">
+
+  <div class="tutorialCaixa">
+    <p class="informacao">PC BUILDER · GUIA INICIAL</p>
+
+    <h2 id="tituloTutorial">Vamos montar seu primeiro PC?</h2>
+
+    <p id="textoTutorial">
+      Você vai escolher suas peças uma por vez.
+      Nós ajudaremos a entender cada componente,
+      conferir a compatibilidade e acompanhar seu orçamento.
+    </p>
+
+    <div class="tutorialBotoes">
+      <button type="button" id="pularTutorial">
+        Pular tutorial
+      </button>
+
+      <button type="button" id="voltarTutorial" hidden>
+        Voltar
+      </button>
+
+      <button type="button" id="avancarTutorial">
+        Começar
+      </button>
+    </div>
+  </div>
+
+</div>
+
+
+<div class="resultadoMontagem" id="resultadoMontagem" hidden>
+  <div class="resultadoCaixa">
+    <p class="informacao">PC BUILDER · RESUMO DA MONTAGEM</p>
+
+    <h2>Sua montagem está pronta!</h2>
+    <p>Confira o resultado da configuração que você escolheu.</p>
+
+    <div class="resultadoCompatibilidade">
+      <h3>Compatibilidade</h3>
+      <p id="statusCompatibilidade"></p>
+    </div>
+
+    <div class="resultadoOrcamento">
+      <div>
+        <p>Valor total</p>
+        <h3 id="totalResultado">R$ 0,00</h3>
+      </div>
+
+      <div>
+        <p>Orçamento máximo</p>
+        <h3 id="orcamentoResultado">R$ 0,00</h3>
+      </div>
+
+      <p id="resumoOrcamento"></p>
+    </div>
+
+    <div class="resultadoEstatisticas">
+      <h3>Adequação ao seu objetivo</h3>
+
+      <div class="estatistica">
+        <p>Jogos</p>
+        <div class="barraEstatistica">
+          <div id="barraJogos"></div>
+        </div>
+        <span id="valorJogos">0%</span>
+      </div>
+
+      <div class="estatistica">
+        <p>Estudos e programação</p>
+        <div class="barraEstatistica">
+          <div id="barraEstudos"></div>
+        </div>
+        <span id="valorEstudos">0%</span>
+      </div>
+
+      <div class="estatistica">
+        <p>Trabalho</p>
+        <div class="barraEstatistica">
+          <div id="barraTrabalho"></div>
+        </div>
+        <span id="valorTrabalho">0%</span>
+      </div>
+    </div>
+
+    <button type="button" id="fecharResultado">
+      Voltar à montagem
+    </button>
+  </div>
+</div>
+
 
 <div class="snackbar" role="status" aria-live="polite">
   <span class="mensagemSnackbar"></span>
